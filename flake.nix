@@ -42,7 +42,7 @@
               pxchfon           # Japanese font support
               metafont          # Metafont support
               pxjahyper         # hyperref support for Japanese
-              bxjatoucs;        # Unicode support for Japanese
+              bxjatoucs         # Unicode support for Japanese
               # dvi to pdf converter
               dvipdfmx
               # Commonly used packages
