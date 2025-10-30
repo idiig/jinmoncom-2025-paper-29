@@ -1,0 +1,6 @@
+#+title: Jimoncom 2025 paper 29 writing environment
+
+#+begin_src shell
+  nix run --impure --extra-experimental-features nix-command --extra-experimental-features flakes
+  latexmk draft
+#+end_src
