@@ -55,7 +55,7 @@
 #+RESULTS:
 
 #+begin_export latex
-\title{語彙プロファイルに見られる八代集における語彙変化}
+\title{語彙プロファイルに見られる八代集の語彙変化}
 
 \etitle{Profile-based lexical change in the Hachidaishu}
 
