@@ -39,9 +39,9 @@
 #+latex_header: \creflabelformat{subsection}{#2#1小節#3}
 #+latex_header: \let\oldref\ref
 #+latex_header: \renewcommand{\ref}{\cref}
-#+LATEX_HEADER: \makeatletter
-#+LATEX_HEADER: \def\：{：}
-#+LATEX_HEADER: \makeatother
+#+latex_header: \makeatletter
+#+latex_header: \def\：{：}
+#+latex_header: \makeatother
 #+begin_src emacs-lisp :eval nil :exports none
   (with-eval-after-load 'ox-latex
     (add-to-list 'org-latex-classes
@@ -78,22 +78,21 @@
 \end{jkeyword}
 
 \begin{eabstract}
-  This paper discusses computational methods for adjusting the
-  perspectives of examining linguistic content and linguistic style in
-  relation to lexical changes in the Hachidaishū (Eight Imperial
-  Anthologies). As a method, small samples were prepared at three
-  levels: groups of synonymous and near-synonymous words, groups of
-  words sharing the same superordinate concept, and groups of
-  unrelated words. The amount of lexical change within samples between
-  two anthologies was calculated using the dissimilarity of word form
+  This paper discusses quantatative methods for adjusting the
+  perspectives of examining thematic contents and lexical choices in
+  relation to language change in the Hachidaishū. As a method, small
+  samples were prepared at three levels: groups of synonymous and
+  near-synonymous words, groups of words sharing the same
+  superordinate concept, and groups of unrelated words. The amount of
+  lexical change within samples between two anthologies was calculated
+  using the within-sample dissimilarity of word choice
   distributions. Based on this amount of change, we examined (1) the
   adjacent pair of anthologies with the maximum change, (2)
   periodization, and (3) patterns of transition in the Hachidaishū. As
   a result, the analytical results at the three levels were
   consistent, though the effectiveness of the adjustment requires
   further verification. On the other hand, the analytical results
-  proved to be content that could be rationally explained within
-  literary history as well.
+  proved to be rationally explained within literary history.
 \end{eabstract}
 
 \begin{ekeyword}
@@ -102,7 +101,6 @@ the Hachidaishu, waka, lexical analysis, language change
 
 \maketitle
 #+end_export
-
  
 * はじめに<<sec:intro>>
 本研究の目的は，古典日本語の語彙分析において，全語彙によるマクロレベル
@@ -160,10 +158,10 @@ the Hachidaishu, waka, lexical analysis, language change
 の変遷が多く議論されてきたが，「形式・内容」を切り離して語彙変化を検討
 する方法論はまだ確立されていない．そこで本稿では，方法論的に形式的変化
 と内容的変化の 2 視座を調整する手法として，語彙変種計量論(lexical
-lectometry) [cite/cf:@Speelman2003Profilebased] に基づく拡張（後述
-[[sec:ext-sem-ctrl]]）を提案する．八代集を広義に時期別の「変種」とみなし，
-その変化量を測定して従来の研究の知見と照合する．さらに，視座の調整によ
-る結果の変化の有無と，変化があった場合の規則性も検討する．
+[social]lectometry) [cite/cf:@Speelman2003Profilebased] に基づく拡張
+（後述[[sec:ext-sem-ctrl]]）を提案する．八代集を広義に時期別の「変種」とみ
+なし，その変化量を測定して従来の研究の知見と照合する．さらに，視座の調
+整による結果の変化の有無と，変化があった場合の規則性も検討する．
 
 * 先行研究<<sec:prev-work>>
 本稿ではまず八代集の言語変化と転換点を説明し，方法論の前提として，形式
@@ -703,8 +701,8 @@ Median=0.003，95%CrI[0，0.06]；同概念群：Median=0.004，95%CrI[0.02，
 の裏づけに活用しうる可能性が示された．
 #+begin_export latex
 \begin{acknowledgment}
-本研究は，日本学術振興会外国人特別研究員制度（課題番号：）よ
-り支援を受けました．
+  本研究は，日本学術振興会外国人特別研究員制度（課題番号：25KF0133）よ
+  り支援を受けました．
 \end{acknowledgment}
 #+end_export
 #+print_bibliography:
