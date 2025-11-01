@@ -17,9 +17,12 @@
                                          ("\\subsubsection{%s}" . "\\subsubsection*{%s}"))))
 			
 			(defun my-html-filter-nobreaks (text backend info)
-			  "Ensure \" \" are properly handled in html export."
+			  "Remove newlines between CJK characters in HTML export."
 			  (when (org-export-derived-backend-p backend 'html)
-			    (replace-regexp-in-string "\n" "" text)))
+			    (replace-regexp-in-string 
+			     "\\([\u3000-\u9fff\uff00-\uffef]\\)\n\\([\u3000-\u9fff\uff00-\uffef]\\)"
+			     "\\1\\2"
+			     text)))
 			
 			(unless (memq 'my-html-filter-nobreaks org-export-filter-plain-text-functions)
 			  (add-to-list 'org-export-filter-plain-text-functions
