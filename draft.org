@@ -1,49 +1,13 @@
+# -*- mode: org; -*-
 :PROPERTIES:
 :GPTEL_MODEL: o1
 :GPTEL_BACKEND: ChatGPT
 :GPTEL_SYSTEM: You are a large language model and a writing assistant. Respond concisely.\n日本語の学術論文の修正作業を以下に従って協力してください。\n\n- 句読点は「。」「、」を避け、「，」「．」を使用すること\n- 用語の置き換えは控えること\n- 文法を中心に修正を行うこと\n- Emacs Org Mode の記法を前提とすること\n- 長文を短くすること\n\n
 :GPTEL_BOUNDS: ((response (3116 3491) (3493 3527) (3530 3564) (3567 3601) (3604 3639) (3642 3682) (3684 3720) (3723 3757) (3760 3790) (4915 4972) (4986 4988) (4999 5013) (5034 5175) (5177 5642) (5644 6265) (6267 6598) (6600 6955) (6980 7074) (7076 7537) (7539 7814) (7816 8199) (8201 8492) (8494 9004) (9006 9439) (9472 9890) (9922 10209) (10211 10461) (10463 11153) (11155 11237) (11239 11425) (11428 11694) (11696 12238) (12245 12534) (12536 12739) (12743 12784) (12788 13216) (13717 13965) (13967 14241) (14727 14963) (14969 15147) (15398 15677) (15679 15976) (15982 16311) (16313 16711) (17322 18061) (18063 18382) (18384 18620) (18622 18831) (18853 18999) (19001 19225) (19227 19754) (19755 20017) (20019 20227) (22494 22720) (22722 22881) (22902 23433) (23435 23648) (23650 23841) (23843 24035) (24225 24473) (24524 24647) (24685 25067) (25069 25521) (25545 25991)))
 :END:
-#+bind: org-latex-default-packages-alist nil
-#+bind: org-latex-packages-alist nil
-#+bind: org-latex-with-hyperref nil
-#+bind: org-latex-pdf-process '("cd %o && latexmk -pdfdvi %f")
-#+cite_export: bibtex ipsjsort
-#+bibliography: ./references.bib
-#+options: timestamp:nil date:nil toc:nil
-#+latex_class: ipsj
-#+latex_class_options: [submit]
-#+latex_header: \usepackage[utf8]{inputenc}
-#+latex_header: \usepackage{otf}
-#+latex_header: \DeclareUnicodeCharacter{9AD9}{\UTF{9AD9}}
-#+latex_header: \DeclareUnicodeCharacter{974F}{\UTF{974F}}
-#+latex_header: \usepackage[ipaex]{pxchfon}
-#+latex_header: \usepackage[dvipdfmx]{graphicx}
-#+latex_header: \usepackage{svg}
-#+latex_header: \usepackage{latexsym}
-#+latex_header: \usepackage{amssymb,amsthm,amsmath}
-#+latex_header: \usepackage{booktabs,siunitx}
-#+latex_header: \usepackage{tikz}
-#+latex_header: \usepackage[dvipdfmx]{geometry}
-#+latex_header: \geometry{right=20mm,left=20mm,top=30mm,bottom=30mm}
-#+latex_header: \usepackage[normalem]{ulem}
-#+latex_header: \usepackage{url}
-#+latex_header: \DeclareUrlCommand\doi{\urlstyle{tt}}
-#+latex_header: \usepackage{cleveref}
-#+latex_header: \crefname{equation}{式}{式}
-#+latex_header: \crefname{figure}{図}{図}
-#+latex_header: \crefname{table}{表}{表}
-#+latex_header: \crefname{section}{第}{第}
-#+latex_header: \creflabelformat{section}{#2#1節#3}
-#+latex_header: \crefname{subsection}{第}{第}
-#+latex_header: \creflabelformat{subsection}{#2#1小節#3}
-#+latex_header: \let\oldref\ref
-#+latex_header: \renewcommand{\ref}{\cref}
-#+latex_header: \makeatletter
-#+latex_header: \def\：{：}
-#+latex_header: \makeatother
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
-
+#+title: 語彙プロファイルに見られる八代集の語彙変化
+#+author: 陳 旭東（東京科学大学 環境・社会理工学院）, ホドシチェク ボル（大阪大学 大学院人文学研究科）, 山元 啓史（東京科学大学 環境・社会理工学院）
+#+setupfile: setup-latex.org
 #+begin_export latex
 \title{語彙プロファイルに見られる八代集の語彙変化}
 
@@ -116,9 +80,9 @@ the Hachidaishu, waka, lexical analysis, language change
 による分析に代わり，語彙における語の確率分布の差を利用し，語彙変化を測
 定する方法を検討する．
 
-第一の調整については，日本語学で既に実践例がある．文献 [cite/t/c:
+第一の調整については，日本語学で既に実践例がある．文献 [cite/cf:
 @miyazima1979Kyosanto; @hasumi1991Ichi] は，同一作品の複数バージョンに
-注目して，語彙・語の変化を検討した．文献 [cite/t/c:@kitasaki2024Heike;
+注目して，語彙・語の変化を検討した．文献 [cite/cf:@kitasaki2024Heike;
 @tanaka2014Konjaku] は，パラレルテキストで語の対応づけを行い，内容の差
 を捨象したうえで対応づけをもつ言語要素の間の言語変化を調べた[fn::
 [cite:@kitasaki2024Heike] は語彙に着目していない．]．これらの研究は，
@@ -186,7 +150,7 @@ lectometry) [cite/cf:@Speelman2003Profilebased] に基づく拡張
 
 *** 意味変化と命名変化の区分の明確化<<sec:ono-sem-var>>
 言語変異の研究対象について，onomasiological variation と
-semasiological variation の二分が[cite/t/c: @Geeraerts1994Structure]で
+semasiological variation の二分が[cite/cf: @Geeraerts1994Structure]で
 提唱されている．onomasiological variation は同じ意味を表す表現の変異
 （命名の変化）であり，semasiological variation は同じ表現の指す意味の
 変異（意味の変化）である[cite/cf: @Geeraerts1994Structure]．
@@ -284,17 +248,17 @@ semasiological variation の二分が[cite/t/c: @Geeraerts1994Structure]で
 
 *** 同語異表記群の比較：表記の変遷研究
 日本語では，同語であっても異なる表記が用いられる．研究
-[cite/t/c:@takahashi2019Kindai] は「カワル・カエル」などを例に表記の変
-遷を示し，研究 [cite/t/c:@takahashi2016Kindai] は「ハレル」「オビル」
-などの複数表記の合一の傾向を指摘した．研究
-[cite/t/c:@mabuchi2016Kindai] は，近代の二字漢語で多様な表記が衰退し統
-一へ向かう要因を論じた．また，研究 [cite/t/c: @takahashi2016Kindai;
-@takahashi2019Kindai] は表記と意味の結び付きに基づくより精緻な分析を提
-示している．同語異表記で括った語形の比較は，意味統制の観点からは語彙変
-数を最も厳格に設定したと認識できる[fn:: ただし，同語であっても，表記ご
-とに表意機能が異なり，使用者に別語意識をもつ場合もある．その使い分けは，
-研究 [cite/t/c:@takahashi2025Tango] などでも議論されている．同一の語形
-の多義性は，今後の課題とする．]．
+[cite/cf:@takahashi2019Kindai] は「カワル・カエル」などを例に表記の変
+遷を示し，研究 [cite/cf:@takahashi2016Kindai] は「ハレル」「オビル」な
+どの複数表記の合一の傾向を指摘した．研究 [cite/cf:@mabuchi2016Kindai]
+は，近代の二字漢語で多様な表記が衰退し統一へ向かう要因を論じた．また，
+研究 [cite/cf: @takahashi2016Kindai; @takahashi2019Kindai] は表記と意
+味の結び付きに基づくより精緻な分析を提示している．同語異表記で括った語
+形の比較は，意味統制の観点からは語彙変数を最も厳格に設定したと認識でき
+る[fn:: ただし，同語であっても，表記ごとに表意機能が異なり，使用者に別
+語意識をもつ場合もある．その使い分けは，研究
+[cite/cf:@takahashi2025Tango] などでも議論されている．同一の語形の多
+義性は，今後の課題とする．]．
 
 *** まとめ：意味統制の水準の多段階化  
 語彙変化の特定側面を見るための統制は，ここまでに形式的同値から概念的同
@@ -320,7 +284,7 @@ semasiological variation の二分が[cite/t/c: @Geeraerts1994Structure]で
 を使用した．このデータセットは，新編国歌大観 CD-ROM 版の二十一代集デー
 タ[cite/cf:@shinhen1996CDROM] を基に，新日本古典文学大系本二十一代集の
 書籍を参照して正規化と単位分割を行った．作者と歌番号は資料
-[cite/t/c:@nakamura1999Kokubungaku] 所収の作者タグを利用し，各単語には
+[cite/cf:@nakamura1999Kokubungaku] 所収の作者タグを利用し，各単語には
 国立国語研究所の分類語彙表 [cite/cf:@nakano1994Bunruigoihyo] に準じた
 分類番号を付与した．八代集の分類語彙表の詳細は次節で述べる．
 
@@ -338,7 +302,7 @@ semasiological variation の二分が[cite/t/c: @Geeraerts1994Structure]で
 # |   7 | 千載集   | 千載   | 1188     |   1288 |
 # |   8 | 新古今集 | 新古今 | 1205     |   1978 |
 
-** 分類語彙表<<sec:wlsp>>
+*** 分類語彙表<<sec:wlsp>>
 八代集データセットにおける八代集用の語彙分類番号の階層を用いることで，
 「ランダム語群」「同概念語群」「類義同義語群」の語群をサンプリングする．
 
@@ -393,7 +357,7 @@ semasiological variation の二分が[cite/t/c: @Geeraerts1994Structure]で
 | ヤヘムグラ |         0% |      37.5% |
 
 プロファイル非類似度は，その語群に限定した変種間の変化量を示す値である．
-計算手法は文献 [cite/t/c: @Speelman2003Profilebased]に準拠し，変種をベ
+計算手法は文献 [cite/cf: @Speelman2003Profilebased]に準拠し，変種をベ
 クトル，語形の相対頻度を各変種ベクトルの次元として扱い，2者の1ノルムの
 距離を求める．たとえば，「ムグラ・ヤヘムグラ」プロファイルでは，後拾遺
 以前（1.00,0.00）と後拾遺以降（0.625,0.375）の距離は \(|1.00 -
@@ -402,7 +366,7 @@ semasiological variation の二分が[cite/t/c: @Geeraerts1994Structure]で
 
 2変種の全般の語彙差は複数のプロファイル非類似度を統合して計算される．
 複数の類似度を統合する方法としては，平均，もしくは，重みづけ平均があげ
-られる[fn:: 重みづけの方法については研究 [cite/t/c:
+られる[fn:: 重みづけの方法については研究 [cite/cf:
 @Ruette2014Semantic] がプロファイルの重要度，内的整合性などに基づく計
 算方法を詳しくとりあげている．]．本稿では単純平均を用いる．すなわち，
 \(n\) 個のプロファイルで計算されたプロファイル非類似度 \(d_1, d_2,
@@ -425,7 +389,7 @@ d_i\) とする．
 サンプルリングは，[[sec:wlsp]] で説明した分類語彙表番号を基に実施する
 （[[tbl:control-level]]）[fn::分類番号づけの自動化，分類番号に依存しない水
 準分けは今後の課題にしたい．]．研究
-[cite/t/c:@Speelman2003Profilebased] では，概念的同値に基づく語群は2～
+[cite/cf:@Speelman2003Profilebased] では，概念的同値に基づく語群は2～
 3個の語形からなる例が多い．また，八代集の語彙中で類義・同義語群のサイ
 ズも基本的に2～5個に収まる．これらに合わせ，ランダム水準と同概念水準の
 語群のサンプルも2～5個の語形を含めるように設定した．ランダム水準の語群
@@ -466,7 +430,7 @@ stan(cmdstanr)（2.36.0）と =cmdstanr= （0.8.1）を用い，モデルにつ�
 
 **** クラスタ分析 - 八代集語彙の分類：<<sec:clus-anal>>
 上記統計モデリングはサンプルごとの変化量を用いた．次に研究
-[cite/t/c:@Speelman2003Profilebased] を踏襲し，サンプルの非類似度の平
+[cite/cf:@Speelman2003Profilebased] を踏襲し，サンプルの非類似度の平
 均を求めて大局的な語彙変化量を算出し分析する．八代集の語彙の分断を分類
 問題と見做し，クラスタ数を3と仮定し，非類似度行列を基にk-means法でクラ
 スタリングを行う．最後に，3水準で見る八代集の語彙の分類の相違を確認す
@@ -647,7 +611,7 @@ stan(cmdstanr)（2.36.0）と =cmdstanr= （0.8.1）を用い，モデルにつ�
 ている．たとえば「量的構造史モデル」[cite/cf:@ito2008Goi] は，使用度数
 （高・中・低）と使用範囲（広・中・狭）で語彙を分類し，時代別の変化を検
 証する．語彙史の研究では，ある視座で同一とみなす語を統合し，通時的変化
-を整理することがによって「語彙的カテゴリー[cite/t/c:@abe2009Goia]」と
+を整理することがによって「語彙的カテゴリー[cite/cf:@abe2009Goia]」と
 呼ばれている．語彙的カテゴリーは，日本語語彙史の研究領域（語の形態，語
 種，位相，語形成など）を多面的に含む[cite/cf:@abe2009Goia]．これらの細
 分領域で分類した部分語彙を比較すれば，意味の軸を超えた多様な語彙変化を
@@ -674,4 +638,3 @@ stan(cmdstanr)（2.36.0）と =cmdstanr= （0.8.1）を用い，モデルにつ�
 \end{acknowledgment}
 #+end_export
 #+print_bibliography:
-

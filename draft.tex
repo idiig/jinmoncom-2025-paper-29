@@ -1,3 +1,4 @@
+% Intended LaTeX compiler: pdflatex
 \documentclass[submit]{ipsj}
 
 \usepackage[utf8]{inputenc}
@@ -26,11 +27,12 @@
 \creflabelformat{subsection}{#2#1小節#3}
 \let\oldref\ref
 \renewcommand{\ref}{\cref}
-\makeatletter
-\def\：{：}
-\makeatother
+\let\origauthor\author
+\renewcommand{\author}[1]{}
+\AtBeginDocument{\let\author\origauthor}
+\author{陳 旭東（東京科学大学 環境・社会理工学院）, ホドシチェク ボル（大阪大学 大学院人文学研究科）, 山元 啓史（東京科学大学 環境・社会理工学院）}
 \date{}
-\title{}
+\title{語彙プロファイルに見られる八代集の語彙変化}
 \begin{document}
 
 \title{語彙プロファイルに見られる八代集の語彙変化}
@@ -79,8 +81,8 @@ the Hachidaishu, waka, lexical analysis, language change
 \end{ekeyword}
 
 \maketitle
-\section{はじめに\label{orgc1188f1}}
-\label{sec:org92f812c}
+\section{はじめに\label{org7310833}}
+\label{sec:org1650bbe}
 本研究の目的は，古典日本語の語彙分析において，全語彙によるマクロレベル
 の調査に代わり，関連語群の部分語彙サンプルを用いた調査手法を八代集（古
 今・後撰・拾遺・後拾遺・金葉・詞花・千載・新古今）の語彙変化に適用する
@@ -129,16 +131,16 @@ the Hachidaishu, waka, lexical analysis, language change
 する方法論はまだ確立されていない．そこで本稿では，方法論的に形式的変化
 と内容的変化の 2 視座を調整する手法として，語彙変種計量論 (lexical
 lectometry) \cite{Speelman2003Profilebased} に基づく拡張
-（\ref{org489a482}後述）を提案する．八代集を広義に時期別の「変種」とみ
+（\ref{org9ed93b8}後述）を提案する．八代集を広義に時期別の「変種」とみ
 なし，その変化量を測定して従来の研究の知見と照合する．さらに，視座の調
 整による結果の変化の有無と，変化があった場合の規則性も検討する．
-\section{先行研究\label{org83d3ae5}}
-\label{sec:org3007c3e}
+\section{先行研究\label{org460ab00}}
+\label{sec:org1601f1b}
 本稿ではまず八代集の言語変化と転換点を説明し，方法論の前提として，形式
 的変化と内容的変化の視座調整の理論的背景と日本語語彙論の研究手法に基づ
 く拡張可能性を先行研究に照らして整理する．
-\subsection{八代集の言語変化\label{orge3e44ee}}
-\label{sec:orgd1fe415}
+\subsection{八代集の言語変化\label{orge3a8deb}}
+\label{sec:org5fd4c84}
 八代集は，『古今和歌集』（905年頃）から『新古今和歌集』（1205年）まで
 を含む8つの勅撰和歌集であり，同一の題材かつ成立年が比較的等間隔なため，
 時期ごとのスナップとして和歌語彙の通時的分析に適した資料である．和歌の
@@ -156,15 +158,15 @@ lectometry) \cite{Speelman2003Profilebased} に基づく拡張
 どの特定の語群内の選好を視座とした数量化は確認されていない．また，計算
 文学研究として，文芸研究での八代集の転換点と，言語学（語彙論）としての
 八代集の転換点を包括的に計算する架橋となる方法論的枠組みが期待される．
-\subsection{語彙変化分析における意味論的統制\label{orgfd7dbb4}}
-\label{sec:org0fde137}
+\subsection{語彙変化分析における意味論的統制\label{orgefc54b7}}
+\label{sec:org049c3e6}
 前述の語彙論における「内容の統制」について述べる．日本語の語彙の研究で
 は，コーパスの内容面の干渉を捨象しようとする考えは文献 \cite{miyazima1979Kyosanto}ですでに実践されている．一方，後述する「語彙的変
 種計量論 (lexical lectometry)」の枠組み \cite{Speelman2003Profilebased,DePascale2019Tokenbased,Geeraerts2023Lexical} では，「意味論的統制(semantic control)」として
 理論と方法を体系的に整理している．その系統を踏まえ，日本語語史・語彙史
 の分析視座を改めて概観する．
-\subsubsection{意味変化と命名変化の区分の明確化\label{orgc628d16}}
-\label{sec:org371b96a}
+\subsubsection{意味変化と命名変化の区分の明確化\label{orgac42c89}}
+\label{sec:orgf8a0aff}
 言語変異の研究対象について，onomasiological variation と
 semasiological variation の二分が\cite{Geeraerts1994Structure}で
 提唱されている．onomasiological variation は同じ意味を表す表現の変異
@@ -190,8 +192,8 @@ semasiological variation の二分が\cite{Geeraerts1994Structure}で
 検討した使い分けうる類語群・関連語群を用いて語彙の違いを測る手法が語彙
 史でも考えられる．その考えは，八代集の各時期にみられる語彙表現の差を分
 析するうえで示唆となる．
-\subsubsection{語彙的変種計量論\label{org1542c0f}}
-\label{sec:org6399864}
+\subsubsection{語彙的変種計量論\label{org440eea6}}
+\label{sec:org04f4c76}
 計量方言学の手法をより一般化した方法論として「変種計量論 (lectometry)」
 の枠組みが提案されている．時期ごとの言語変化は地域方言とは異なり，狭義
 の言語「変種」や日本語学でいう「位相」としては扱えないが，変種計量論で
@@ -207,11 +209,11 @@ semasiological variation の二分が\cite{Geeraerts1994Structure}で
 語彙的変種計量論では，意味論的統制として語彙変数（言い換えうる語形の群）
 を利用している．1つの語彙変数に属す言い換えの2変種間の使用度数・率の差
 で2変種の変化量を計算し，内容による変化量を変化量全体から取り除く
-（\ref{orgdb049d3}にて後述）．こうして得られた変化量を複数の語彙変数で
+（\ref{org119969e}にて後述）．こうして得られた変化量を複数の語彙変数で
 統合すれば，2変種の全体的な語彙差が算出できる．この測定手法は，日本語
 の語彙論・語彙史ではまだ実践されていない．
 \subsubsection{2種類の語彙変数の認定アプローチ}
-\label{sec:org8a4805f}
+\label{sec:orgb618bc7}
 上記「語彙変数」，または言い換えうる語形の群の認定は完全に客観にはなり
 えない．本来，変異理論の「変数」概念では，変数内の語形はあらゆる条件で
 互換でき，命題として真値が同値である必要がある．しかし，語彙レベルでそ
@@ -239,8 +241,8 @@ semasiological variation の二分が\cite{Geeraerts1994Structure}で
 本稿の文脈では，こうした 2 種類の同値による語彙変数の規定は，意味統制
 として 2 段階での調整を可能にし，異なる観点で語彙差を観測可能にしたと
 考える．
-\subsection{語彙変化の統制の拡張の可能性\label{org489a482}}
-\label{sec:org4e02651}
+\subsection{語彙変化の統制の拡張の可能性\label{org9ed93b8}}
+\label{sec:orgc89d348}
 上述した語彙変化・変異の統制は語彙変種計量論の枠組みに基づくが，他方で
 日本語の語彙論的研究を踏まえれば，前掲の2段階に加えて統制の水準をさら
 に拡張しうる可能性がある．具体的には，全体的な語彙変化を対象とする代わ
@@ -249,7 +251,7 @@ semasiological variation の二分が\cite{Geeraerts1994Structure}で
 \cite{ito2008Goi} なども参考となるが，本稿では意味の軸に関連する
 もののみとりあげる．}．
 \subsubsection{上位概念での語群比較：意味分野別構造分析法}
-\label{sec:org91f1cef}
+\label{sec:orge3bc3fb}
 意味分野別構造分析法 \cite{tajima2000Goikenkyu} は，語彙の意味分野
 を単位に部分語彙を区分し，その比較を行う手法である．たとえば，親族呼称
 や色彩表現などの意味分野ごとに2変種を比べ，片方にのみ含まれる語を意味
@@ -258,20 +260,21 @@ semasiological variation の二分が\cite{Geeraerts1994Structure}で
 接比較する代わりに意味分野で整理すれば，一定の統制をかけつつ詳細な差を
 捉えやすくなる．
 \subsubsection{同語異表記群の比較：表記の変遷研究}
-\label{sec:orgf24a73e}
+\label{sec:orgcc3fc69}
 日本語では，同語であっても異なる表記が用いられる．研究
 \cite{takahashi2019Kindai} は「カワル・カエル」などを例に表記の変
-遷を示し，研究 \cite{takahashi2016Kindai} は「ハレル」「オビル」
-などの複数表記の合一の傾向を指摘した．研究
-\cite{mabuchi2016Kindai} は，近代の二字漢語で多様な表記が衰退し統
-一へ向かう要因を論じた．また，研究 \cite{takahashi2016Kindai,takahashi2019Kindai} は表記と意味の結び付きに基づくより精緻な分析を提
-示している．同語異表記で括った語形の比較は，意味統制の観点からは語彙変
-数を最も厳格に設定したと認識できる\footnote{ただし，同語であっても，表記ご
-とに表意機能が異なり，使用者に別語意識をもつ場合もある．その使い分けは，
-研究 \cite{takahashi2025Tango} などでも議論されている．同一の語形
-の多義性は，今後の課題とする．}．
+遷を示し，研究 \cite{takahashi2016Kindai} は「ハレル」「オビル」な
+どの複数表記の合一の傾向を指摘した．研究 \cite{mabuchi2016Kindai}
+は，近代の二字漢語で多様な表記が衰退し統一へ向かう要因を論じた．また，
+研究 \cite{takahashi2016Kindai,takahashi2019Kindai} は表記と意
+味の結び付きに基づくより精緻な分析を提示している．同語異表記で括った語
+形の比較は，意味統制の観点からは語彙変数を最も厳格に設定したと認識でき
+る\footnote{ただし，同語であっても，表記ごとに表意機能が異なり，使用者に別
+語意識をもつ場合もある．その使い分けは，研究
+\cite{takahashi2025Tango} などでも議論されている．同一の語形の多
+義性は，今後の課題とする．}．
 \subsubsection{まとめ：意味統制の水準の多段階化}
-\label{sec:org561a36f}
+\label{sec:org7b7d59a}
 語彙変化の特定側面を見るための統制は，ここまでに形式的同値から概念的同
 値の2段階を取り上げたが，日本語語彙研究では，同語異表記と意味分野の調
 査手法を参考に，以下のように多段階化できる\footnote{この拡張はあくまでも変
@@ -287,12 +290,12 @@ semasiological variation の二分が\cite{Geeraerts1994Structure}で
 の選択から段階的に濾過できると想定される．最終的に，方法論的見解として，
 八代集の語彙変化の見え方がこの統制水準によって異なるか，異なる場合その
 違いが連続的か離散的かを明らかにする．
-\section{方法\label{org9bba440}}
-\label{sec:org5e49564}
-\subsection{材料\label{org63f7818}}
-\label{sec:org5423a27}
-\subsubsection{八代集語彙データセット\label{org7d92606}}
-\label{sec:orge7ac0b8}
+\section{方法\label{orge3b8157}}
+\label{sec:orgddb1cf3}
+\subsection{材料\label{org2d27818}}
+\label{sec:orgda97b41}
+\subsubsection{八代集語彙データセット\label{org608f41d}}
+\label{sec:orgafd9770}
 本研究では八代集語彙データセット \cite{Hodoscek2022Developmenta}
 を使用した．このデータセットは，新編国歌大観 CD-ROM 版の二十一代集デー
 タ\cite{shinhen1996CDROM} を基に，新日本古典文学大系本二十一代集の
@@ -300,8 +303,8 @@ semasiological variation の二分が\cite{Geeraerts1994Structure}で
 \cite{nakamura1999Kokubungaku} 所収の作者タグを利用し，各単語には
 国立国語研究所の分類語彙表 \cite{nakano1994Bunruigoihyo} に準じた
 分類番号を付与した．八代集の分類語彙表の詳細は次節で述べる．
-\subsection{分類語彙表\label{org73da188}}
-\label{sec:org72dd961}
+\subsubsection{分類語彙表\label{orgf9989d3}}
+\label{sec:org727fcf1}
 八代集データセットにおける八代集用の語彙分類番号の階層を用いることで，
 「ランダム語群」「同概念語群」「類義同義語群」の語群をサンプリングする．
 
@@ -314,23 +317,23 @@ semasiological variation の二分が\cite{Geeraerts1994Structure}で
 る．先頭の \texttt{1} は体言を意味し，その下位に \texttt{1.1} （部門：関係）， \texttt{1.16} （中
 項目：時間）， \texttt{1.1642} （分類項目：過去）が意味の階層によって分類されて
 いる．
-\subsection{手続き\label{orgd3e87de}}
-\label{sec:org30be3bf}
+\subsection{手続き\label{org6091c08}}
+\label{sec:org88cb195}
 語彙変化を測定するには，語彙的変種計量論の初期手法であるプロファイル基
 盤分析 \cite{Speelman2003Profilebased} が提示するプロファイルの非
 類似度を用い，各歌集の語彙的選好の差を数値化する．さらにクラスタリング
 分析と統計モデリングにより，通時的変遷の転換点（差の最も大きい隣接歌集）
 を調べる．本稿でのプロファイルの概念の拡張，その非類似度の計算，そして
 サンプリング手法を述べる．
-\subsubsection{プロファイルと変化量の計算\label{orgdb049d3}}
-\label{sec:org9e5a767}
+\subsubsection{プロファイルと変化量の計算\label{org119969e}}
+\label{sec:org6f6b80a}
 プロファイル基盤分析における「プロファイル」とは，語彙変数の下位語形と
 変種とのクロス表で，各変種における同義・類義語形の使用頻度・率を示す
-（\ref{tab:orgc88afc8}）．本稿では，語彙変数をさらに一般化し，3水準の意味の
+（\ref{tab:org9340dc3}）．本稿では，語彙変数をさらに一般化し，3水準の意味の
 類似度をもつ語群を用いてプロファイルを作成する．
 
 \begin{table}[t]
-\caption{\label{tab:orgc88afc8}プロファイルの例：「葎」のプロファイル；数字は各時期の使用率を意味する．}
+\caption{\label{tab:org9340dc3}プロファイルの例：「葎」のプロファイル；数字は各時期の使用率を意味する．}
 \centering
 \begin{tabular}{lll}
  & 後拾遺以前 & 後拾遺以降\\
@@ -355,10 +358,10 @@ semasiological variation の二分が\cite{Geeraerts1994Structure}で
 \(n\) 個のプロファイルで計算されたプロファイル非類似度 \(d_1, d_2,
 \ldots, d_n\) を用い，全体の語彙差を\(D=\frac{1}{n} \sum_{i=1}^{n}
 d_i\) とする．
-\subsubsection{3 水準の語群のサンプリング\label{orgca0166a}}
-\label{sec:orga44b6f4}
+\subsubsection{3 水準の語群のサンプリング\label{orgc34c6cf}}
+\label{sec:org66ff301}
 \begin{table*}[t]
-\caption{\label{tab:org20834e7}3水準の語形集合のサンプル例}
+\caption{\label{tab:orge85a4db}3水準の語形集合のサンプル例}
 \centering
 \begin{tabular}{llllr}
 水準 & 説明 & サンプリング基準 & 例 & サンプル数\\
@@ -372,8 +375,8 @@ d_i\) とする．
 前述のように，本稿では意味統制の水準を3段階に拡張した．これら3水準に対
 応する語群を用いてプロファイルのサンプルを生成し，変化量を計算する．
 
-サンプルリングは，\ref{org73da188} で説明した分類語彙表番号を基に実施する
-（\ref{tab:org20834e7}）\footnote{分類番号づけの自動化，分類番号に依存しない水
+サンプルリングは，\ref{orgf9989d3} で説明した分類語彙表番号を基に実施する
+（\ref{tab:orge85a4db}）\footnote{分類番号づけの自動化，分類番号に依存しない水
 準分けは今後の課題にしたい．}．研究
 \cite{Speelman2003Profilebased} では，概念的同値に基づく語群は2～
 3個の語形からなる例が多い．また，八代集の語彙中で類義・同義語群のサイ
@@ -390,11 +393,11 @@ d_i\) とする．
 類番号を参考に目視で全数抽出した．最終的にランダム群196サンプル，同概
 念語群928サンプル，同義類義語群43サンプルを得て，これらを変化量の計算
 と分析に用いる．
-\subsubsection{変化量の分析\label{orgbc13f40}}
-\label{sec:orgb7a07db}
+\subsubsection{変化量の分析\label{orga323d74}}
+\label{sec:orgd0edf8e}
 \begin{enumerate}
-\item 統計モデリング - 変化量最大の隣接2歌集：\label{orgcd91abe}
-\label{sec:orgab0d9e5}
+\item 統計モデリング - 変化量最大の隣接2歌集：\label{org37ea4d5}
+\label{sec:orgc092f74}
 それぞれの意味統制の水準で変化量が最大となる隣接2歌集の有無と相違を調
 べるために，語群サンプルの変化量（プロファイル非類似度）をハードル対数
 正規回帰モデル\footnote{語群サンプルのプロファイル非類似度の分布は対数正規
@@ -415,30 +418,30 @@ stan(cmdstanr)（2.36.0）と \texttt{cmdstanr} （0.8.1）を用い，モデル
 群のサンプル ID を設定する．最終的に，各統制水準ごとに \texttt{phase} のレベル
 間のコントラスト（隣接ペア間の差）を事後分布からサンプリングし，変化が
 特に大きい \texttt{phase} の有無と3水準での違いを検討する．
-\item クラスタ分析 - 八代集語彙の分類：\label{orgb2d6cc6}
-\label{sec:org576fcda}
+\item クラスタ分析 - 八代集語彙の分類：\label{orgc0c106b}
+\label{sec:org94d59fa}
 上記統計モデリングはサンプルごとの変化量を用いた．次に研究
 \cite{Speelman2003Profilebased} を踏襲し，サンプルの非類似度の平
 均を求めて大局的な語彙変化量を算出し分析する．八代集の語彙の分断を分類
 問題と見做し，クラスタ数を3と仮定し，非類似度行列を基にk-means法でクラ
 スタリングを行う．最後に，3水準で見る八代集の語彙の分類の相違を確認す
 る．
-\item 多次元尺度構成法 - 語彙の揺れのパターンの可視化：\label{org4950a80}
-\label{sec:orgce9a8b0}
+\item 多次元尺度構成法 - 語彙の揺れのパターンの可視化：\label{org632a34b}
+\label{sec:org0109f29}
 最後に，上記の大局的な語彙変化量の行列を基に多次元尺度構成法
 \cite{Kruskal1964Multidimensional} を実施し，第1主軸に八つの勅撰集
 の語彙の相対的位置づけを\(x\)軸に，成立年順に\(y\)軸へ等間隔に配置して，
 可視化する．さらに，上記2つの分析と同様に，3水準での相違を検討する．
 \end{enumerate}
-\section{結果\label{orgdebc25a}}
-\label{sec:orgbcb3f14}
-\subsection{変化量最大の隣接 2 歌集\label{orge02a181}}
-\label{sec:orgff0d399}
+\section{結果\label{orge087dd4}}
+\label{sec:orgf674e8d}
+\subsection{変化量最大の隣接 2 歌集\label{orgf557cae}}
+\label{sec:org8a8960d}
 隣接 2 歌集は統計モデルでは \texttt{phase} と呼び，八代集には計 7 つの \texttt{phase} が
 ある．各統制水準を通じ，それらの \texttt{phase} のうち他のすべての \texttt{phase} より変
 化量が大きい例は存在しなかった．
 
-具体的に，各統制水準での \texttt{phase} の変化量の差は \ref{fig:org14d1f90} で確認で
+具体的に，各統制水準での \texttt{phase} の変化量の差は \ref{fig:orgcd0cae5} で確認で
 きる．同図では，ランダム・同概念・同義類義の3水準における \texttt{phase} の変化
 量の比較のうち，95\% の信用区間(CrI)で有意に 0 とならない比較のみを提示
 している．すべての \texttt{phase} のレベル間コントラクト（計 21 対）のうち，ラ
@@ -452,15 +455,15 @@ stan(cmdstanr)（2.36.0）と \texttt{cmdstanr} （0.8.1）を用い，モデル
 ンダム水準：Median=0.003，95\% CrI [0, 0.06]；同概念水準：Median=0.004，
 95\% CrI [0.02, 0.05]；同義類義水準：Median=0.008，95\% CrI [0.01, 0.17]）
 こと，2点あった． \texttt{phase} 間の変化量の差はすべて 0.1 未満だった．それ以
-外では\ref{tab:orgcfa5ebb} において「詞花→千載」に正の効果が確認された
+外では\ref{tab:org39ff028} において「詞花→千載」に正の効果が確認された
 （Median=0.212，95\% CrI [0.07, 0.35]）\footnote{モデルでは「古今→後撰」を比
 較の基準として効果を変換していないestimatesであることに留意されたい．}．
 また，サンプルの語群サイズには変化量への正の効果が見られた
-（\ref{tab:orgcfa5ebb}）．
-\subsection{八代集の分類\label{org3ff9a9a}}
-\label{sec:org2690cbe}
+（\ref{tab:org39ff028}）．
+\subsection{八代集の分類\label{orgb1299cc}}
+\label{sec:org4b9135e}
 非類似度の平均をもとに計算した２つずつの和歌集のグローバルな語彙差の行
-列でクラスタリングした結果を示す（\ref{fig:orgd42c033}）．
+列でクラスタリングした結果を示す（\ref{fig:orgca7fbb3}）．
 
 ランダム水準では，「古今・後撰・拾遺」「後拾遺・金葉・詞花・千載」「新
 古今」の３クラスタに分類された．同義類義水準は，ランダム水準と同様な分
@@ -469,10 +472,10 @@ stan(cmdstanr)（2.36.0）と \texttt{cmdstanr} （0.8.1）を用い，モデル
 中間水準である同概念水準では，「古今・後撰・拾遺」「後拾遺・詞花・千載・
 新古今」「金葉」の３クラスタに分類された．他の２水準とは，「金葉」「新
 古今」の扱いに相違があった．
-\subsection{語彙の揺れのパターンの可視化\label{org0295ca4}}
-\label{sec:org7231501}
+\subsection{語彙の揺れのパターンの可視化\label{org47afa98}}
+\label{sec:org890db25}
 多次元尺度構成法で語彙差の行列を可視化し，第1主成分軸を \(x\) 軸，成立
-年順を \(y\) 軸に配置した（\ref{fig:orgd42c033}）．その結果，3 水準で類似した傾向
+年順を \(y\) 軸に配置した（\ref{fig:orgca7fbb3}）．その結果，3 水準で類似した傾向
 がみられ，「古今→後撰→拾遺→後拾遺→金葉」は負から正へ移行し，「拾遺→後
 拾遺」で0値を切り，「金葉→詞花→千載→新古今」は負方向と正方向を往復する
 パターンを示した．
@@ -480,17 +483,17 @@ stan(cmdstanr)（2.36.0）と \texttt{cmdstanr} （0.8.1）を用い，モデル
 \begin{figure}[t]
 \centering
 \includesvg[width=.9\linewidth]{./figs/fig-diff-phase-1}
-\caption{\label{fig:org14d1f90}異なる統制の水準に基づく \texttt{phase} 変化量のコンストラクト．それぞれの有意差の事後分布の中央値と95\%の信用区間 (CrI) を \(\Delta =\)  \texttt{[<Median>, 95\% CrI [<lower.CrI>, <upper.CrI>]} で提示した．差が 0 より大きい確率は \(P(\Delta > 0) =\) \texttt{<possibility>} で提示した．}
+\caption{\label{fig:orgcd0cae5}異なる統制の水準に基づく \texttt{phase} 変化量のコンストラクト．それぞれの有意差の事後分布の中央値と95\%の信用区間 (CrI) を \(\Delta =\)  \texttt{[<Median>, 95\% CrI [<lower.CrI>, <upper.CrI>]} で提示した．差が 0 より大きい確率は \(P(\Delta > 0) =\) \texttt{<possibility>} で提示した．}
 \end{figure}
 
 \begin{figure}[t]
 \centering
 \includesvg[width=.9\linewidth]{./figs/aggregate-path}
-\caption{\label{fig:orgd42c033}多次元尺度構成法とクラスタリングによる第1主成分の可視化．矢印は成立年順を示す．色はクラスタを示す．クラスタリングにより三代集である古今・後撰・拾遺，および詞花・千載が安定のクラスタを形成する一方，金葉と新古今の位置は水準により変動する．\(x\) 軸での変動パターンは，「古今→後撰→拾遺→後拾遺→金葉」は負から正値へと移行し，「拾遺→後拾遺」で0値を切る．「金葉→詞花→千載→新古今」は，負方向と正方向の方向転換の繰り返しを示す．}
+\caption{\label{fig:orgca7fbb3}多次元尺度構成法とクラスタリングによる第1主成分の可視化．矢印は成立年順を示す．色はクラスタを示す．クラスタリングにより三代集である古今・後撰・拾遺，および詞花・千載が安定のクラスタを形成する一方，金葉と新古今の位置は水準により変動する．\(x\) 軸での変動パターンは，「古今→後撰→拾遺→後拾遺→金葉」は負から正値へと移行し，「拾遺→後拾遺」で0値を切る．「金葉→詞花→千載→新古今」は，負方向と正方向の方向転換の繰り返しを示す．}
 \end{figure}
 
 \begin{table}[t]
-\caption{\label{tab:orgcfa5ebb}モデル推定値．太字は95\%信頼区間が0を含まない係数．}
+\caption{\label{tab:org39ff028}モデル推定値．太字は95\%信頼区間が0を含まない係数．}
 \centering
 \begin{tabular}{lrl}
 係数 & 推定値 & 95\% CrI\\
@@ -515,23 +518,23 @@ stan(cmdstanr)（2.36.0）と \texttt{cmdstanr} （0.8.1）を用い，モデル
 周辺 \(R^2\) & 0.094 & \\
 \end{tabular}
 \end{table}
-\section{考察\label{org5ab407f}}
-\label{sec:org4694afa}
-\subsection{3水準における八代集の語彙変化の同調\label{org06b2ea6}}
-\label{sec:orgb5f6507}
-統計モデリングの結果 (\ref{orge02a181}) では，最大の変化を示す隣接2歌集は
+\section{考察\label{org883ad76}}
+\label{sec:orgec61c26}
+\subsection{3水準における八代集の語彙変化の同調\label{org4ba04bd}}
+\label{sec:orgec7b698}
+統計モデリングの結果 (\ref{orgf557cae}) では，最大の変化を示す隣接2歌集は
 見られなかったが，「古今→後撰」の語彙変化は小さく，「拾遺→後拾遺」「金
 葉→詞花」「詞花→千載」の語彙変化は大きかった．このことは「後拾遺」を境
 目とする初期の安定性と後期の変動性を支持した．ただし，いずれも転換点と
 いえるほどの大きな変化ではなく，漸進的と見做すべきである．
 
-クラスタ分析 (\ref{org3ff9a9a}) では，連続した勅撰集が1つのクラスタになり
+クラスタ分析 (\ref{orgb1299cc}) では，連続した勅撰集が1つのクラスタになり
 やすい結果から勅撰集の変化の連続性が推測される．同概念水準とその他2水
 準との比較では金葉と新古今のクラスタの扱いに違いがみられたことは，可視
-化の結果 (\ref{org0295ca4}) の原理と関連していると考えられる．そのため，次
+化の結果 (\ref{org47afa98}) の原理と関連していると考えられる．そのため，次
 にまとめてとりあげる．
 
-可視化の結果（\ref{org0295ca4}）では，三代集の「古今→後撰→拾遺」が比較的安
+可視化の結果（\ref{org47afa98}）では，三代集の「古今→後撰→拾遺」が比較的安
 定していた一方，後拾遺以降は軸の正負が転換した．先行研究が示す「褻」か
 ら「晴」への体裁変化 \cite{ueno1976Koshui} とは整合するが，同義類
 義水準の語形選択にも転換が見られる点は注目に値する．同義類義水準での変
@@ -552,9 +555,9 @@ stan(cmdstanr)（2.36.0）と \texttt{cmdstanr} （0.8.1）を用い，モデル
 いるわけではなく，偶然は排除できない．しかし，言語学的分析手法の計算文
 学研究への応用可能性（主に数量的裏づけ）を示す予備的結果といえる．この
 水準間の分析結果の同調については，次節で詳述する．
-\subsection{語彙分析における意味統制の水準\label{org77b4f08}}
-\label{sec:orgbb3c6c9}
-統計モデリングの結果 (\ref{orge02a181}) によると，統制水準が異なっても大き
+\subsection{語彙分析における意味統制の水準\label{orga4431da}}
+\label{sec:orgdcd2a72}
+統計モデリングの結果 (\ref{orgf557cae}) によると，統制水準が異なっても大き
 な変化はなかった．これは，八代集は「部立」などに規定されている共通のテー
 マをもとに編纂され，テーマ差による変化が本来小さく，内容の統制を行って
 も結果は変わりにくいためかもしれない．別資料での再検証が必要である．一
@@ -570,16 +573,16 @@ stan(cmdstanr)（2.36.0）と \texttt{cmdstanr} （0.8.1）を用い，モデル
 連続的に見えやすく・見えにくくなることはなかった．このように意味内容面
 の統制は，その影響が連続量的に振る舞わず，語彙変化の視座を離散的なもの
 として切り替える操作に近いといえる．
-\subsection{サンプル語群のサイズと変化量の関係\label{orgaf94164}}
-\label{sec:org1b8cee3}
-\ref{orge02a181} の統計モデリングでは，サイズが2〜5個のわずかな幅の中でも
+\subsection{サンプル語群のサイズと変化量の関係\label{orgd277117}}
+\label{sec:org412accf}
+\ref{orgf557cae} の統計モデリングでは，サイズが2〜5個のわずかな幅の中でも
 サンプル語群のサイズ拡大に伴い変化量が大きくなる正の効果が確認された
-（\ref{tab:orgcfa5ebb}）．プロファイル基盤分析の変化量はサイズに敏感で
+（\ref{tab:org39ff028}）．プロファイル基盤分析の変化量はサイズに敏感で
 あることがわかった．この結果は，マクロとミクロの語彙変化量の差が必ずし
 も意味の統制によって生じるだけでなく，語群のサイズによっても生じる可能
 性を示唆する．
-\section{結論\label{orge0c3a2e}}
-\label{sec:orge17d9d9}
+\section{結論\label{org396f025}}
+\label{sec:org5bbac91}
 本稿は，八代集の語彙変化を分析するために，語彙的変種計量論の分析手法
 \cite{Speelman2003Profilebased} を基に，意味統制の水準を拡張し日本
 語学の語彙論の観点を切り替える手法を八代集の語彙に適用した．具体的には，
@@ -597,5 +600,5 @@ stan(cmdstanr)（2.36.0）と \texttt{cmdstanr} （0.8.1）を用い，モデル
   り支援を受けました．
 \end{acknowledgment}
 \bibliographystyle{ipsjsort}
-\bibliography{./references}
+\bibliography{references}
 \end{document}

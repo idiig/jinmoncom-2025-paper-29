@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>語彙プロファイルに見られる八代集の語彙変化</title>
+<meta name="author" content="陳 旭東（東京科学大学 環境・社会理工学院）, ホドシチェク ボル（大阪大学 大学院人文学研究科）, 山元 啓史（東京科学大学 環境・社会理工学院）" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/bigblow_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/bigblow_theme/css/bigblow.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/bigblow_theme/css/hideshow.css"/>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/jquery-ui-1.10.2.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/jquery.localscroll-min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/jquery.zclip.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/bigblow.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/hideshow.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">語彙プロファイルに見られる八代集の語彙変化</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org597cfbc">1. はじめに</a></li>
+<li><a href="#org316c5f4">2. 先行研究</a>
+<ul>
+<li><a href="#orgfc4a922">2.1. 八代集の言語変化</a></li>
+<li><a href="#orgb3168e5">2.2. 語彙変化分析における意味論的統制</a>
+<ul>
+<li><a href="#org5424af2">2.2.1. 意味変化と命名変化の区分の明確化</a></li>
+<li><a href="#org411197e">2.2.2. 語彙的変種計量論</a></li>
+<li><a href="#org0f87149">2.2.3. 2種類の語彙変数の認定アプローチ</a></li>
+</ul>
+</li>
+<li><a href="#orgd1689d5">2.3. 語彙変化の統制の拡張の可能性</a>
+<ul>
+<li><a href="#orga03a790">2.3.1. 上位概念での語群比較：意味分野別構造分析法</a></li>
+<li><a href="#orga5e978a">2.3.2. 同語異表記群の比較：表記の変遷研究</a></li>
+<li><a href="#orgad0d1db">2.3.3. まとめ：意味統制の水準の多段階化</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgd3af644">3. 方法</a>
+<ul>
+<li><a href="#org6b6a438">3.1. 材料</a>
+<ul>
+<li><a href="#orgc41938c">3.1.1. 八代集語彙データセット</a></li>
+<li><a href="#org0348861">3.1.2. 分類語彙表</a></li>
+</ul>
+</li>
+<li><a href="#orgca6d9f5">3.2. 手続き</a>
+<ul>
+<li><a href="#orgbb23f25">3.2.1. プロファイルと変化量の計算</a></li>
+<li><a href="#orgcb5784f">3.2.2. 3 水準の語群のサンプリング</a></li>
+<li><a href="#org6c49066">3.2.3. 変化量の分析</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orga9df634">4. 結果</a>
+<ul>
+<li><a href="#org76d8fe4">4.1. 変化量最大の隣接 2 歌集</a></li>
+<li><a href="#orgc908f6d">4.2. 八代集の分類</a></li>
+<li><a href="#org647606d">4.3. 語彙の揺れのパターンの可視化</a></li>
+</ul>
+</li>
+<li><a href="#orgf951848">5. 考察</a>
+<ul>
+<li><a href="#org0e59b1d">5.1. 3水準における八代集の語彙変化の同調</a></li>
+<li><a href="#orgdcb61c4">5.2. 語彙分析における意味統制の水準</a></li>
+<li><a href="#orge933547">5.3. サンプル語群のサイズと変化量の関係</a></li>
+</ul>
+</li>
+<li><a href="#orgb4a8af8">6. 結論</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org597cfbc" class="outline-2">
+<h2 id="org597cfbc"><span class="section-number-2">1.</span> はじめに<a id="orgf88e7b2"></a></h2>
+<div class="outline-text-2" id="text-1">
+<p>
+本研究の目的は，古典日本語の語彙分析において，全語彙によるマクロレベルの調査に代わり，関連語群の部分語彙サンプルを用いた調査手法を八代集（古今・後撰・拾遺・後拾遺・金葉・詞花・千載・新古今）の語彙変化に適用することである．この方法に関して関連研究と関連理論を整理し，語彙変化の研究が蓄積している八代集のテキストデータを分析する．</p>
+
+<p>
+複数の言語変種間の語彙変異・変化は，それぞれの変種の全語彙の差集合で検討することの古典語における有効性が指摘されている(<a href="#citeproc_bib_item_30">築島, 1992</a>; <a href="#citeproc_bib_item_35">近藤, 2011</a>)．一方，語彙の変化・変異の比較手法には，以下の3点の拡張が可能であると考える．第一に，語の推敲など様式の側面と，テーマ・トピックなど内容の側面が混在し，両者を分離して調べられていない．第二に，「変種 \(A\) の話者はみな \(X\) を言い変種 \(B\) ではまったく言わない」といった表現 \(X\) よりも，「変種 \(A\)の話者は \(Y\) を多用し変種 \(B\) はあまり使わない」といった数量的差異のある表現 \(Y\) が一般的だ (<a href="#citeproc_bib_item_13">Wolfram, 2004</a>) が，集合差ではこうした \(Y\)が拾えない．第三に，集合差分では語の消滅・出現のみ把握できるものの，その消長を用いた語彙差（語彙変化）の数量化は十分に検討されていない．そこで，2点の調整を考える．第一に，語彙差の調査では形式と内容のいずれかを統制し，片方を分析する方法を開発する．第二に，集合の差による分析に代わり，語彙における語の確率分布の差を利用し，語彙変化を測定する方法を検討する．</p>
+
+<p>
+第一の調整については，日本語学で既に実践例がある．文献 (<a href="#citeproc_bib_item_19">宮島, 1979</a>; <a href="#citeproc_bib_item_31">蓮見, 1991</a>) は，同一作品の複数バージョンに注目して，語彙・語の変化を検討した．文献 (<a href="#citeproc_bib_item_27">田中 and 山元, 2014</a>; <a href="#citeproc_bib_item_18">北崎, 2024</a>) は，パラレルテキストで語の対応づけを行い，内容の差を捨象したうえで対応づけをもつ言語要素の間の言語変化を調べた<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup>．これらの研究は，内容の統制としてパラレルコーパス相当の資料を利用しているが，パラレルコーパスは語彙史の資料としてごく限られ，特定資料への依存を避ける方法論も求められる．たとえば，本稿の和歌資料では異本こそあるが，同一作品の異なる変種は存在しない．また，既存研究の多くは特定変種の特徴的な表現や語彙交替を事例として記述するにとどまり，交替しうる語の選好を数量化する，すなわち第二の調整の趣旨は十分に扱われていない．</p>
+
+<p>
+このように，この第二の調整は古典語の語彙論の応用可能な領域の文体・位相の研究におよぶが，日本語の研究では語彙論での実践が少ない<sup><a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup>．対して，計量方言学は，交替しうる表現の分布を用いて変種間の違いを定量的に測定し言語変種の分類に貢献する方法論が充実している．そこで，それらを参考としつつ，勅撰和歌集の代表である八代集における変遷について，語彙を用いた計量分析を検討する．</p>
+
+<p>
+本稿が扱う八代集は，成立年がおおむね300年の範囲で均一なため，平安期の貴族社会が好んだ言語の変遷を見る手がかりとなる．表現論と語彙論では，その変遷が多く議論されてきたが，「形式・内容」を切り離して語彙変化を検討する方法論はまだ確立されていない．そこで本稿では，方法論的に形式的変化と内容的変化の 2 視座を調整する手法として，語彙変種計量論 (lexicallectometry) (<a href="#citeproc_bib_item_12">Speelman et al., 2003</a>) に基づく拡張（<a href="#orga06c6ab">2.3</a>後述）を提案する．八代集を広義に時期別の「変種」とみなし，その変化量を測定して従来の研究の知見と照合する．さらに，視座の調整による結果の変化の有無と，変化があった場合の規則性も検討する．</p>
+</div>
+</div>
+<div id="outline-container-org316c5f4" class="outline-2">
+<h2 id="org316c5f4"><span class="section-number-2">2.</span> 先行研究<a id="org75e77c6"></a></h2>
+<div class="outline-text-2" id="text-2">
+<p>
+本稿ではまず八代集の言語変化と転換点を説明し，方法論の前提として，形式的変化と内容的変化の視座調整の理論的背景と日本語語彙論の研究手法に基づく拡張可能性を先行研究に照らして整理する．</p>
+</div>
+<div id="outline-container-orgfc4a922" class="outline-3">
+<h3 id="orgfc4a922"><span class="section-number-3">2.1.</span> 八代集の言語変化<a id="org499fc80"></a></h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+八代集は，『古今和歌集』（905年頃）から『新古今和歌集』（1205年）までを含む8つの勅撰和歌集であり，同一の題材かつ成立年が比較的等間隔なため，時期ごとのスナップとして和歌語彙の通時的分析に適した資料である．和歌の言語研究では，語形の選好の交替とテーマの流行が混在し，両者の境界が曖昧である．文芸研究としては，和歌の詠まれる情景 (<a href="#citeproc_bib_item_14">上野, 1976</a>)，流行 (<a href="#citeproc_bib_item_21">川村, 1991</a>)，歌語辞典としては「桜」「梅」など歌語間の共出現 (<a href="#citeproc_bib_item_26">片桐, 1983</a>) が指摘されている．八代集の表現の転換点としては，『拾遺和歌集』（拾遺）から『後拾遺和歌集』（後拾遺）への移行が，「褻」（私的・日常的）から「晴」（儀礼的・公式的）への転換として言及されている(<a href="#citeproc_bib_item_14">上野, 1976</a>; <a href="#citeproc_bib_item_21">川村, 1991</a>)．</p>
+
+<p>
+一方，前述脚注でも言及したとおり，語彙を視座に歌語の変化を調査した研究では，語彙そのものではなく，語彙の各種品詞の比率や修飾語対動詞比率などの語彙指標を利用する傾向がみられる(<a href="#citeproc_bib_item_25">波多野, 1941</a>; <a href="#citeproc_bib_item_32">西端, 1992</a>; <a href="#citeproc_bib_item_33">辻, 1998</a>)．本稿の趣旨である，語の言い換えなどの特定の語群内の選好を視座とした数量化は確認されていない．また，計算文学研究として，文芸研究での八代集の転換点と，言語学（語彙論）としての八代集の転換点を包括的に計算する架橋となる方法論的枠組みが期待される．</p>
+</div>
+</div>
+<div id="outline-container-orgb3168e5" class="outline-3">
+<h3 id="orgb3168e5"><span class="section-number-3">2.2.</span> 語彙変化分析における意味論的統制<a id="orgc420b0f"></a></h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+前述の語彙論における「内容の統制」について述べる．日本語の語彙の研究では，コーパスの内容面の干渉を捨象しようとする考えは文献 (<a href="#citeproc_bib_item_19">宮島, 1979</a>)ですでに実践されている．一方，後述する「語彙的変種計量論 (lexical lectometry)」の枠組み (<a href="#citeproc_bib_item_12">Speelman et al., 2003</a>; <a href="#citeproc_bib_item_3">De Pascale, 2019</a>; <a href="#citeproc_bib_item_4">Geeraerts et al., 2023</a>) では，「意味論的統制(semantic control)」として理論と方法を体系的に整理している．その系統を踏まえ，日本語語史・語彙史の分析視座を改めて概観する．</p>
+</div>
+<div id="outline-container-org5424af2" class="outline-4">
+<h4 id="org5424af2"><span class="section-number-4">2.2.1.</span> 意味変化と命名変化の区分の明確化<a id="org98437f5"></a></h4>
+<div class="outline-text-4" id="text-2-2-1">
+<p>
+言語変異の研究対象について，onomasiological variation とsemasiological variation の二分が(<a href="#citeproc_bib_item_5">Geeraerts et al., 1994</a>)で提唱されている．onomasiological variation は同じ意味を表す表現の変異（命名の変化）であり，semasiological variation は同じ表現の指す意味の変異（意味の変化）である(<a href="#citeproc_bib_item_5">Geeraerts et al., 1994</a>)．</p>
+
+<p>
+前者「意味の変化」には，語史研究による精緻な分析，計量的手法の開発と応用など，多様な分析が展開されている(<a href="#citeproc_bib_item_29">相田 et al., 2023</a>; <a href="#citeproc_bib_item_39">髙橋 et al., 2025</a>)．後者「命名の変化」には，同語の異表記の選好変化として論じられる場合が多い (<a href="#citeproc_bib_item_36">間淵, 2016</a>; <a href="#citeproc_bib_item_38">髙橋, 2016</a>; <a href="#citeproc_bib_item_37">髙橋, 2019</a>)．後述にとりあげる．また，類義語同士の交替でも，最終的には意味分担の相違と使い分けに焦点が置かれる<sup><a id="fnr.3" class="footref" href="#fn.3" role="doc-backlink">3</a></sup>．このように，命名変化には常に意味変化の要素が絡むと考えられる．</p>
+
+<p>
+一方で，日本語の語彙の集合・体系としての変化では，(1) 語彙の集合全体・部分集合の各要素の消滅・出現と(2) その集合がもつ数量的特徴<sup><a id="fnr.4" class="footref" href="#fn.4" role="doc-backlink">4</a></sup>の2点が主な分析対象となりやすい．この場合，語史のように命名変化・意味変化を区別する必要はない．文体や時期，ジェンダなどによる語彙差を論じる際も，数量的指標を利用することが多い（(<a href="#citeproc_bib_item_34">近藤, 2018</a>)など）．他方，方言地理学では同義の語形分布を用いる計量方言学の研究があり，同概念異語形の分布で方言間の距離を計算する方法が多用されている．これらの手法にならい，語史・語彙史で検討した使い分けうる類語群・関連語群を用いて語彙の違いを測る手法が語彙史でも考えられる．その考えは，八代集の各時期にみられる語彙表現の差を分析するうえで示唆となる．</p>
+</div>
+</div>
+<div id="outline-container-org411197e" class="outline-4">
+<h4 id="org411197e"><span class="section-number-4">2.2.2.</span> 語彙的変種計量論<a id="org2e94436"></a></h4>
+<div class="outline-text-4" id="text-2-2-2">
+<p>
+計量方言学の手法をより一般化した方法論として「変種計量論 (lectometry)」の枠組みが提案されている．時期ごとの言語変化は地域方言とは異なり，狭義の言語「変種」や日本語学でいう「位相」としては扱えないが，変種計量論ではそのような時期差も「変種」の1つとして考慮される(<a href="#citeproc_bib_item_4">Geeraerts et al., 2023</a>)．</p>
+
+<p>
+「変種計量論」は，複数の言語変数<sup><a id="fnr.5" class="footref" href="#fn.5" role="doc-backlink">5</a></sup>を収集し，それらを定量的に分析して言語変種間の距離を測定する方法論群である(<a href="#citeproc_bib_item_11">Ruette et al., 2014</a>)．言語表現の要素の1つである語彙を用いた「語彙的変種計量論(lexical lectometry)」はその下位区分に位置し，本稿では主にこの語彙的変種計量論の枠組みを採用する．</p>
+
+<p>
+語彙的変種計量論では，意味論的統制として語彙変数（言い換えうる語形の群）を利用している．1つの語彙変数に属す言い換えの2変種間の使用度数・率の差で2変種の変化量を計算し，内容による変化量を変化量全体から取り除く（<a href="#orga9777e7">3.2.1</a>にて後述）．こうして得られた変化量を複数の語彙変数で統合すれば，2変種の全体的な語彙差が算出できる．この測定手法は，日本語の語彙論・語彙史ではまだ実践されていない．</p>
+</div>
+</div>
+<div id="outline-container-org0f87149" class="outline-4">
+<h4 id="org0f87149"><span class="section-number-4">2.2.3.</span> 2種類の語彙変数の認定アプローチ</h4>
+<div class="outline-text-4" id="text-2-2-3">
+<p>
+上記「語彙変数」，または言い換えうる語形の群の認定は完全に客観にはなりえない．本来，変異理論の「変数」概念では，変数内の語形はあらゆる条件で互換でき，命題として真値が同値である必要がある．しかし，語彙レベルでその厳格な同義判定を行うのは難しく(<a href="#citeproc_bib_item_9">Lavandera, 1978</a>)，結果として語彙変異は音韻などに比べ，変異理論の分析の周縁に置かれがちであった(<a href="#citeproc_bib_item_3">De Pascale, 2019</a>)．</p>
+
+<p>
+変種計量論では，このような語形たちの真理条件レベルでの同値を「形式的同値 (formal equivalence)」とし，それよりルーズな同値である「概念的同値(conceptual equivalence)」を提起している(<a href="#citeproc_bib_item_3">De Pascale, 2019</a>; <a href="#citeproc_bib_item_4">Geeraerts et al., 2023</a>)．概念的同値とは，同一のデノテーションを異なる概念として語彙化した2語の間の同義のことである．たとえば，同じズボンについて， <i>breeches</i> とでも <i>pants</i> とでも言えるため，形式的同値ではない2語は，概念的同値にあたりうる(<a href="#citeproc_bib_item_3">De Pascale, 2019</a>; <a href="#citeproc_bib_item_4">Geeraerts et al., 2023</a>)<sup><a id="fnr.6" class="footref" href="#fn.6" role="doc-backlink">6</a></sup>．</p>
+
+<p>
+その結果，[ <i>trouser</i> = <i>pants</i> ] のような形式的同値の語彙変数のみならず，半ズボンとして [ <i>breeches</i> = <i>trouser</i> = <i>pants</i> ] のような概念的同値の語形たちも語彙変数であると捉えられる．さらに，概念的同値にある変異形の選好は，異なる変種の話者が行う言語化，とくに認知面の概念のカテゴリ化の根拠として成立するとされる(<a href="#citeproc_bib_item_3">De Pascale, 2019</a>)．</p>
+
+<p>
+本稿の文脈では，こうした 2 種類の同値による語彙変数の規定は，意味統制として 2 段階での調整を可能にし，異なる観点で語彙差を観測可能にしたと考える．</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd1689d5" class="outline-3">
+<h3 id="orgd1689d5"><span class="section-number-3">2.3.</span> 語彙変化の統制の拡張の可能性<a id="orga06c6ab"></a></h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+上述した語彙変化・変異の統制は語彙変種計量論の枠組みに基づくが，他方で日本語の語彙論的研究を踏まえれば，前掲の2段階に加えて統制の水準をさらに拡張しうる可能性がある．具体的には，全体的な語彙変化を対象とする代わりに，部分語彙を取り出して詳しく検討する手法がすでに事例として報告されている<sup><a id="fnr.7" class="footref" href="#fn.7" role="doc-backlink">7</a></sup>．</p>
+</div>
+<div id="outline-container-orga03a790" class="outline-4">
+<h4 id="orga03a790"><span class="section-number-4">2.3.1.</span> 上位概念での語群比較：意味分野別構造分析法</h4>
+<div class="outline-text-4" id="text-2-3-1">
+<p>
+意味分野別構造分析法 (<a href="#citeproc_bib_item_28">田島, 2000</a>) は，語彙の意味分野を単位に部分語彙を区分し，その比較を行う手法である．たとえば，親族呼称や色彩表現などの意味分野ごとに2変種を比べ，片方にのみ含まれる語を意味分野レベルで特定できる．意味分野（上位概念）は語彙変数に当たらないが，意味の近さを粗く統制する点で類似すると考えられる．一方，2変種の語を直接比較する代わりに意味分野で整理すれば，一定の統制をかけつつ詳細な差を捉えやすくなる．</p>
+</div>
+</div>
+<div id="outline-container-orga5e978a" class="outline-4">
+<h4 id="orga5e978a"><span class="section-number-4">2.3.2.</span> 同語異表記群の比較：表記の変遷研究</h4>
+<div class="outline-text-4" id="text-2-3-2">
+<p>
+日本語では，同語であっても異なる表記が用いられる．研究(<a href="#citeproc_bib_item_37">髙橋, 2019</a>) は「カワル・カエル」などを例に表記の変遷を示し，研究 (<a href="#citeproc_bib_item_38">髙橋, 2016</a>) は「ハレル」「オビル」などの複数表記の合一の傾向を指摘した．研究 (<a href="#citeproc_bib_item_36">間淵, 2016</a>)は，近代の二字漢語で多様な表記が衰退し統一へ向かう要因を論じた．また，研究 (<a href="#citeproc_bib_item_38">髙橋, 2016</a>; <a href="#citeproc_bib_item_37">髙橋, 2019</a>) は表記と意味の結び付きに基づくより精緻な分析を提示している．同語異表記で括った語形の比較は，意味統制の観点からは語彙変数を最も厳格に設定したと認識できる<sup><a id="fnr.8" class="footref" href="#fn.8" role="doc-backlink">8</a></sup>．</p>
+</div>
+</div>
+<div id="outline-container-orgad0d1db" class="outline-4">
+<h4 id="orgad0d1db"><span class="section-number-4">2.3.3.</span> まとめ：意味統制の水準の多段階化</h4>
+<div class="outline-text-4" id="text-2-3-3">
+<p>
+語彙変化の特定側面を見るための統制は，ここまでに形式的同値から概念的同値の2段階を取り上げたが，日本語語彙研究では，同語異表記と意味分野の調査手法を参考に，以下のように多段階化できる<sup><a id="fnr.9" class="footref" href="#fn.9" role="doc-backlink">9</a></sup>：</p>
+
+<p>
+統制なし → 意味分野統制 → 概念的同値語群統制 → 形式的同値語群統制 → 同語異表記群統制 → 同義トークン異表記統制</p>
+
+<p>
+本稿では，データの制約上「ランダム語群 → 同概念語群 → 類義同義語群」に簡略化し，この軸に沿って八代集各時期の語彙を部分語彙に分け，サンプルの分布差を用いた計算で分析する．こうすることで，用語の選択の変化をテーマの選択から段階的に濾過できると想定される．最終的に，方法論的見解として，八代集の語彙変化の見え方がこの統制水準によって異なるか，異なる場合その違いが連続的か離散的かを明らかにする．</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd3af644" class="outline-2">
+<h2 id="orgd3af644"><span class="section-number-2">3.</span> 方法<a id="org893d361"></a></h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org6b6a438" class="outline-3">
+<h3 id="org6b6a438"><span class="section-number-3">3.1.</span> 材料<a id="orgdcebc76"></a></h3>
+<div class="outline-text-3" id="text-3-1">
+</div>
+<div id="outline-container-orgc41938c" class="outline-4">
+<h4 id="orgc41938c"><span class="section-number-4">3.1.1.</span> 八代集語彙データセット<a id="org39306c4"></a></h4>
+<div class="outline-text-4" id="text-3-1-1">
+<p>
+本研究では八代集語彙データセット (<a href="#citeproc_bib_item_6">Hodošček and Yamamoto, 2022</a>)を使用した．このデータセットは，新編国歌大観 CD-ROM 版の二十一代集データ(<a href="#citeproc_bib_item_22">新編国歌大観編集委員会, 1996</a>) を基に，新日本古典文学大系本二十一代集の書籍を参照して正規化と単位分割を行った．作者と歌番号は資料(<a href="#citeproc_bib_item_15">中村 et al., 1999</a>) 所収の作者タグを利用し，各単語には国立国語研究所の分類語彙表 (<a href="#citeproc_bib_item_16">中野 et al., 1994</a>) に準じた分類番号を付与した．八代集の分類語彙表の詳細は次節で述べる．</p>
+</div>
+</div>
+<div id="outline-container-org0348861" class="outline-4">
+<h4 id="org0348861"><span class="section-number-4">3.1.2.</span> 分類語彙表<a id="org4376fc2"></a></h4>
+<div class="outline-text-4" id="text-3-1-2">
+<p>
+八代集データセットにおける八代集用の語彙分類番号の階層を用いることで，「ランダム語群」「同概念語群」「類義同義語群」の語群をサンプリングする．</p>
+
+<p>
+分類語彙表番号は，国立国語研究所によって編纂された日本語の大規模なシソーラスであり，階層的な意味カテゴリを伴うエントリが収録されている(<a href="#citeproc_bib_item_1">Asahara et al., 2022</a>)．本稿で用いる分類は，現行の分類語彙表番号の旧版(<a href="#citeproc_bib_item_16">中野 et al., 1994</a>) に準じており，和歌に特有で現代語には存在しないカテゴリを追加し，同語の異表記を細かく分類する拡張も行った．分類番号は，たとえば，語彙項目「昨年」の分類番号が <code>1.1642</code> である．先頭の <code>1</code> は体言を意味し，その下位に <code>1.1</code> （部門：関係）， <code>1.16</code> （中項目：時間）， <code>1.1642</code> （分類項目：過去）が意味の階層によって分類されている．</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgca6d9f5" class="outline-3">
+<h3 id="orgca6d9f5"><span class="section-number-3">3.2.</span> 手続き<a id="org135f88e"></a></h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+語彙変化を測定するには，語彙的変種計量論の初期手法であるプロファイル基盤分析 (<a href="#citeproc_bib_item_12">Speelman et al., 2003</a>) が提示するプロファイルの非類似度を用い，各歌集の語彙的選好の差を数値化する．さらにクラスタリング分析と統計モデリングにより，通時的変遷の転換点（差の最も大きい隣接歌集）を調べる．本稿でのプロファイルの概念の拡張，その非類似度の計算，そしてサンプリング手法を述べる．</p>
+</div>
+<div id="outline-container-orgbb23f25" class="outline-4">
+<h4 id="orgbb23f25"><span class="section-number-4">3.2.1.</span> プロファイルと変化量の計算<a id="orga9777e7"></a></h4>
+<div class="outline-text-4" id="text-3-2-1">
+<p>
+プロファイル基盤分析における「プロファイル」とは，語彙変数の下位語形と変種とのクロス表で，各変種における同義・類義語形の使用頻度・率を示す（<a href="#org4d6cf06">1</a>）．本稿では，語彙変数をさらに一般化し，3水準の意味の類似度をもつ語群を用いてプロファイルを作成する．</p>
+
+<table id="org4d6cf06" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption class="t-above"><span class="table-number">Table 1:</span> プロファイルの例：「葎」のプロファイル；数字は各時期の使用率を意味する．</caption>
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-right">後拾遺以前</th>
+<th scope="col" class="org-right">後拾遺以降</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">ムグラ</td>
+<td class="org-right">100%</td>
+<td class="org-right">62.5%</td>
+</tr>
+
+<tr>
+<td class="org-left">ヤヘムグラ</td>
+<td class="org-right">0%</td>
+<td class="org-right">37.5%</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+プロファイル非類似度は，その語群に限定した変種間の変化量を示す値である．計算手法は文献 (<a href="#citeproc_bib_item_12">Speelman et al., 2003</a>)に準拠し，変種をベクトル，語形の相対頻度を各変種ベクトルの次元として扱い，2者の1ノルムの距離を求める．たとえば，「ムグラ・ヤヘムグラ」プロファイルでは，後拾遺以前（1.00,0.00）と後拾遺以降（0.625,0.375）の距離は \(|1.00 -
+0.625|+|0.00-0.375|=0.75\)となる．さらに，変化量の有意性は絶対頻度での対数尤度検定で判定し，有意でない場合変化量を0と見做す．</p>
+
+<p>
+2変種の全般の語彙差は複数のプロファイル非類似度を統合して計算される．複数の類似度を統合する方法としては，平均，もしくは，重みづけ平均があげられる<sup><a id="fnr.10" class="footref" href="#fn.10" role="doc-backlink">10</a></sup>．本稿では単純平均を用いる．すなわち，\(n\) 個のプロファイルで計算されたプロファイル非類似度 \(d_1, d_2,
+\ldots, d_n\) を用い，全体の語彙差を\(D=\frac{1}{n} \sum_{i=1}^{n}
+d_i\) とする．</p>
+</div>
+</div>
+<div id="outline-container-orgcb5784f" class="outline-4">
+<h4 id="orgcb5784f"><span class="section-number-4">3.2.2.</span> 3 水準の語群のサンプリング<a id="org0d5b915"></a></h4>
+<div class="outline-text-4" id="text-3-2-2">
+<table id="org7d944de" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption class="t-above"><span class="table-number">Table 2:</span> 3水準の語形集合のサンプル例</caption>
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">水準</th>
+<th scope="col" class="org-left">説明</th>
+<th scope="col" class="org-left">サンプリング基準</th>
+<th scope="col" class="org-left">例</th>
+<th scope="col" class="org-right">サンプル数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">ランダム群</td>
+<td class="org-left">意味的統制なし</td>
+<td class="org-left">分類番号分類項目不一致</td>
+<td class="org-left">{花橘, 雁}</td>
+<td class="org-right">196</td>
+</tr>
+
+<tr>
+<td class="org-left">同上位概念群</td>
+<td class="org-left">広義の意味分野共有（例：「植物」語彙）</td>
+<td class="org-left">分類番号分類項目一致</td>
+<td class="org-left">{花橘, 稲, 桜花}</td>
+<td class="org-right">928</td>
+</tr>
+
+<tr>
+<td class="org-left">類義・同義語群</td>
+<td class="org-left">狭義の概念共有（例：「植物-葎」語彙）</td>
+<td class="org-left">分類番号同語判定＋目視選別</td>
+<td class="org-left">{葎, 八重葎}</td>
+<td class="org-right">43</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+前述のように，本稿では意味統制の水準を3段階に拡張した．これら3水準に対応する語群を用いてプロファイルのサンプルを生成し，変化量を計算する．</p>
+
+<p>
+サンプルリングは，<a href="#org4376fc2">3.1.2</a> で説明した分類語彙表番号を基に実施する（<a href="#org7d944de">2</a>）<sup><a id="fnr.11" class="footref" href="#fn.11" role="doc-backlink">11</a></sup>．研究(<a href="#citeproc_bib_item_12">Speelman et al., 2003</a>) では，概念的同値に基づく語群は2～3個の語形からなる例が多い．また，八代集の語彙中で類義・同義語群のサイズも基本的に2～5個に収まる．これらに合わせ，ランダム水準と同概念水準の語群のサンプルも2～5個の語形を含めるように設定した．ランダム水準の語群は，対象となる30の意味分野<sup><a id="fnr.12" class="footref" href="#fn.12" role="doc-backlink">12</a></sup>の全語彙から，サイズが2～5の非同概念の語形の群をそれぞれのサイズで50回ずつ無作為抽出（非復元抽出）し，合計で200イテレーションを実施した．同概念語群は，対象の30の意味分野ごとにサイズ2～5個の同概念の語形の群をそれぞれのサイズで30回ずつ無作為抽出（非復元抽出）した．同義類義語群は分類番号を参考に目視で全数抽出した．最終的にランダム群196サンプル，同概念語群928サンプル，同義類義語群43サンプルを得て，これらを変化量の計算と分析に用いる．</p>
+</div>
+</div>
+<div id="outline-container-org6c49066" class="outline-4">
+<h4 id="org6c49066"><span class="section-number-4">3.2.3.</span> 変化量の分析<a id="orgecc4bee"></a></h4>
+<div class="outline-text-4" id="text-3-2-3">
+</div>
+<ol class="org-ol">
+<li><a id="org923f4ff"></a>統計モデリング - 変化量最大の隣接2歌集：<a id="org438fb45"></a><br />
+<div class="outline-text-5" id="text-3-2-3-1">
+<p>
+それぞれの意味統制の水準で変化量が最大となる隣接2歌集の有無と相違を調べるために，語群サンプルの変化量（プロファイル非類似度）をハードル対数正規回帰モデル<sup><a id="fnr.13" class="footref" href="#fn.13" role="doc-backlink">13</a></sup> で分析する．モデルでは，固定効果として隣接する勅撰集の組 (<code>phase</code>)<sup><a id="fnr.14" class="footref" href="#fn.14" role="doc-backlink">14</a></sup> と意味統制の水準，さらに二者の交互作用（ <code>phase</code> \(\times\) 統制水準）を含める．サンプルとなる語群のサイズも統制変数として，固定効果に組み込む．ランダム効果項（ランダム切片）として語群の属する意味分野 (<code>profile</code>) と語群のサンプル ID を設定する．最終的に，各統制水準ごとに <code>phase</code> のレベル間のコントラスト（隣接ペア間の差）を事後分布からサンプリングし，変化が特に大きい <code>phase</code> の有無と3水準での違いを検討する．</p>
+</div>
+</li>
+<li><a id="orge14cac4"></a>クラスタ分析 - 八代集語彙の分類：<a id="orgcd89edb"></a><br />
+<div class="outline-text-5" id="text-3-2-3-2">
+<p>
+上記統計モデリングはサンプルごとの変化量を用いた．次に研究(<a href="#citeproc_bib_item_12">Speelman et al., 2003</a>) を踏襲し，サンプルの非類似度の平均を求めて大局的な語彙変化量を算出し分析する．八代集の語彙の分断を分類問題と見做し，クラスタ数を3と仮定し，非類似度行列を基にk-means法でクラスタリングを行う．最後に，3水準で見る八代集の語彙の分類の相違を確認する．</p>
+</div>
+</li>
+<li><a id="org58fb798"></a>多次元尺度構成法 - 語彙の揺れのパターンの可視化：<a id="org24e2a2c"></a><br />
+<div class="outline-text-5" id="text-3-2-3-3">
+<p>
+最後に，上記の大局的な語彙変化量の行列を基に多次元尺度構成法(<a href="#citeproc_bib_item_7">Kruskal, 1964</a>) を実施し，第1主軸に八つの勅撰集の語彙の相対的位置づけを\(x\)軸に，成立年順に\(y\)軸へ等間隔に配置して，可視化する．さらに，上記2つの分析と同様に，3水準での相違を検討する．</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-orga9df634" class="outline-2">
+<h2 id="orga9df634"><span class="section-number-2">4.</span> 結果<a id="org0f27a22"></a></h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org76d8fe4" class="outline-3">
+<h3 id="org76d8fe4"><span class="section-number-3">4.1.</span> 変化量最大の隣接 2 歌集<a id="orgb8def23"></a></h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+隣接 2 歌集は統計モデルでは <code>phase</code> と呼び，八代集には計 7 つの <code>phase</code> がある．各統制水準を通じ，それらの <code>phase</code> のうち他のすべての <code>phase</code> より変化量が大きい例は存在しなかった．</p>
+
+<p>
+具体的に，各統制水準での <code>phase</code> の変化量の差は <a href="#orgb843458">1</a> で確認できる．同図では，ランダム・同概念・同義類義の3水準における <code>phase</code> の変化量の比較のうち，95% の信用区間(CrI)で有意に 0 とならない比較のみを提示している．すべての <code>phase</code> のレベル間コントラクト（計 21 対）のうち，ランダム水準は 5 対，同概念水準は 14 対，同義類義水準は 4 対に差が確認された．</p>
+
+<p>
+それぞれの水準で共通した変化量の差としては，「拾遺→後拾遺」より「古今→後撰」が小さい（ランダム水準：Median=0.003，95% CrI [0, 0.06]；同概念水準：Median=0.002，95% CrI [0.01, 0.03]；同義類義水準：Median=0.006，95% CrI [0, 0.13]）ことと，「金葉→詞花」より「古今→後撰」が小さい（ランダム水準：Median=0.003，95% CrI [0, 0.06]；同概念水準：Median=0.004，95% CrI [0.02, 0.05]；同義類義水準：Median=0.008，95% CrI [0.01, 0.17]）こと，2点あった． <code>phase</code> 間の変化量の差はすべて 0.1 未満だった．それ以外では<a href="#orgc92ba7a">3</a> において「詞花→千載」に正の効果が確認された（Median=0.212，95% CrI [0.07, 0.35]）<sup><a id="fnr.15" class="footref" href="#fn.15" role="doc-backlink">15</a></sup>．また，サンプルの語群サイズには変化量への正の効果が見られた（<a href="#orgc92ba7a">3</a>）．</p>
+</div>
+</div>
+<div id="outline-container-orgc908f6d" class="outline-3">
+<h3 id="orgc908f6d"><span class="section-number-3">4.2.</span> 八代集の分類<a id="org5dafb89"></a></h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+非類似度の平均をもとに計算した２つずつの和歌集のグローバルな語彙差の行列でクラスタリングした結果を示す（<a href="#org6b91d77">2</a>）．</p>
+
+<p>
+ランダム水準では，「古今・後撰・拾遺」「後拾遺・金葉・詞花・千載」「新古今」の３クラスタに分類された．同義類義水準は，ランダム水準と同様な分類であった．</p>
+
+<p>
+中間水準である同概念水準では，「古今・後撰・拾遺」「後拾遺・詞花・千載・新古今」「金葉」の３クラスタに分類された．他の２水準とは，「金葉」「新古今」の扱いに相違があった．</p>
+</div>
+</div>
+<div id="outline-container-org647606d" class="outline-3">
+<h3 id="org647606d"><span class="section-number-3">4.3.</span> 語彙の揺れのパターンの可視化<a id="org376fd87"></a></h3>
+<div class="outline-text-3" id="text-4-3">
+<p>
+多次元尺度構成法で語彙差の行列を可視化し，第1主成分軸を \(x\) 軸，成立年順を \(y\) 軸に配置した（<a href="#org6b91d77">2</a>）．その結果，3 水準で類似した傾向がみられ，「古今→後撰→拾遺→後拾遺→金葉」は負から正へ移行し，「拾遺→後拾遺」で0値を切り，「金葉→詞花→千載→新古今」は負方向と正方向を往復するパターンを示した．</p>
+
+
+<div id="orgb843458" class="figure">
+<p><img style="width:100%" src="./figs/fig-diff-phase-1.svg" alt="fig-diff-phase-1.svg" class="org-svg" /></p>
+<p><span class="figure-number">Figure 1: </span>異なる統制の水準に基づく <code>phase</code> 変化量のコンストラクト．それぞれの有意差の事後分布の中央値と95%の信用区間 (CrI) を \(\Delta =\)  <code>[&lt;Median&gt;, 95% CrI [&lt;lower.CrI&gt;, &lt;upper.CrI&gt;]</code> で提示した．差が 0 より大きい確率は \(P(\Delta > 0) =\) <code>&lt;possibility&gt;</code> で提示した．</p>
+</div>
+
+
+<div id="org6b91d77" class="figure">
+<p><img style="width:100%" src="./figs/aggregate-path.svg" alt="aggregate-path.svg" class="org-svg" /></p>
+<p><span class="figure-number">Figure 2: </span>多次元尺度構成法とクラスタリングによる第1主成分の可視化．矢印は成立年順を示す．色はクラスタを示す．クラスタリングにより三代集である古今・後撰・拾遺，および詞花・千載が安定のクラスタを形成する一方，金葉と新古今の位置は水準により変動する．\(x\) 軸での変動パターンは，「古今→後撰→拾遺→後拾遺→金葉」は負から正値へと移行し，「拾遺→後拾遺」で0値を切る．「金葉→詞花→千載→新古今」は，負方向と正方向の方向転換の繰り返しを示す．</p>
+</div>
+
+<table id="orgc92ba7a" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption class="t-above"><span class="table-number">Table 3:</span> モデル推定値．太字は95%信頼区間が0を含まない係数．</caption>
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">係数</th>
+<th scope="col" class="org-right">推定値</th>
+<th scope="col" class="org-left">95% CrI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">\(\alpha_{\mu}\)</td>
+<td class="org-right">-2.472</td>
+<td class="org-left">[-2.596, -2.342]</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\alpha_{\text{hu}}\)</td>
+<td class="org-right">-5.043</td>
+<td class="org-left">[-5.843, -4.460]</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\beta_{\text{size}}\)</td>
+<td class="org-right"><b>0.139</b></td>
+<td class="org-left">[0.122, 0.156]</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\beta_{\text{concept controlled}}\)</td>
+<td class="org-right">-0.055</td>
+<td class="org-left">[-0.261, 0.141]</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\beta_{\text{near synonymy controlled}}\)</td>
+<td class="org-right">-0.252</td>
+<td class="org-left">[-0.578, 0.072]</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\beta_{\text{Gosenshu--Shuishu}}\)</td>
+<td class="org-right">0.020</td>
+<td class="org-left">[-0.119, 0.158]</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\beta_{\text{Shuishu--Goshuishu}}\)</td>
+<td class="org-right"><b>0.158</b></td>
+<td class="org-left">[0.019, 0.296]</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\beta_{\text{Goshuishu--Kin'yoshu}}\)</td>
+<td class="org-right">0.029</td>
+<td class="org-left">[-0.114, 0.169]</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\beta_{\text{Kin'yoshu--Shikashu}}\)</td>
+<td class="org-right"><b>0.156</b></td>
+<td class="org-left">[0.013, 0.297]</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\beta_{\text{Shikashu--Senzaishu}}\)</td>
+<td class="org-right"><b>0.212</b></td>
+<td class="org-left">[0.073, 0.352]</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\beta_{\text{Senzaishu--Shinkokinshu}}\)</td>
+<td class="org-right">0.134</td>
+<td class="org-left">[-0.006, 0.275]</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\sigma\)</td>
+<td class="org-right">0.702</td>
+<td class="org-left">[0.692, 0.714]</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\sigma_{\text{profile}}\)</td>
+<td class="org-right">0.358</td>
+<td class="org-left">[0.310, 0.412]</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\sigma_{\text{hu profile}}\)</td>
+<td class="org-right">1.342</td>
+<td class="org-left">[0.950, 1.907]</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">観測数</td>
+<td class="org-right">8145</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">\(R^2\)</td>
+<td class="org-right">0.222</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">周辺 \(R^2\)</td>
+<td class="org-right">0.094</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf951848" class="outline-2">
+<h2 id="orgf951848"><span class="section-number-2">5.</span> 考察<a id="org6036c30"></a></h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org0e59b1d" class="outline-3">
+<h3 id="org0e59b1d"><span class="section-number-3">5.1.</span> 3水準における八代集の語彙変化の同調<a id="org310f0a5"></a></h3>
+<div class="outline-text-3" id="text-5-1">
+<p>
+統計モデリングの結果 (<a href="#orgb8def23">4.1</a>) では，最大の変化を示す隣接2歌集は見られなかったが，「古今→後撰」の語彙変化は小さく，「拾遺→後拾遺」「金葉→詞花」「詞花→千載」の語彙変化は大きかった．このことは「後拾遺」を境目とする初期の安定性と後期の変動性を支持した．ただし，いずれも転換点といえるほどの大きな変化ではなく，漸進的と見做すべきである．</p>
+
+<p>
+クラスタ分析 (<a href="#org5dafb89">4.2</a>) では，連続した勅撰集が1つのクラスタになりやすい結果から勅撰集の変化の連続性が推測される．同概念水準とその他2水準との比較では金葉と新古今のクラスタの扱いに違いがみられたことは，可視化の結果 (<a href="#org376fd87">4.3</a>) の原理と関連していると考えられる．そのため，次にまとめてとりあげる．</p>
+
+<p>
+可視化の結果（<a href="#org376fd87">4.3</a>）では，三代集の「古今→後撰→拾遺」が比較的安定していた一方，後拾遺以降は軸の正負が転換した．先行研究が示す「褻」から「晴」への体裁変化 (<a href="#citeproc_bib_item_14">上野, 1976</a>) とは整合するが，同義類義水準の語形選択にも転換が見られる点は注目に値する．同義類義水準での変化は「褻→晴」として単純に解釈しがたく，さらなる検討が必要である．また，金葉まで負軸から正軸への連続的推移があったが，金葉から詞花への転換は成立年が近いにもかかわらず軸の正負が初めて反転した．これは金葉の撰者が同時代の歌人を多く採録するのに対し，詞花が後拾遺の歌人の作を多く収録したこと (<a href="#citeproc_bib_item_23">松田, 1939</a>) と関連し，詞花の後拾遺寄りへの回帰を示唆すると考えられる．さらに，「金葉→詞花→千載→新古今」は正の値の範囲内で揺れを示し，(1) 同時代重視から旧時代志向への回帰，(2) 再び同時代志向への転換，(3) 最終的に新古今集における古歌を取り入れる本歌取り<sup><a id="fnr.16" class="footref" href="#fn.16" role="doc-backlink">16</a></sup> の隆盛，といった新古の選好交替を反映している可能性がある．</p>
+
+<p>
+全体的には，本稿で設定した3水準の結果はいずれも近似しており，中間的水準である同概念水準だけが異なる傾向を示した．文学史の記述とも整合するが，本稿の分析手続き（語彙のサンプル調査）と文学史的事実が必ずしも対応しているわけではなく，偶然は排除できない．しかし，言語学的分析手法の計算文学研究への応用可能性（主に数量的裏づけ）を示す予備的結果といえる．この水準間の分析結果の同調については，次節で詳述する．</p>
+</div>
+</div>
+<div id="outline-container-orgdcb61c4" class="outline-3">
+<h3 id="orgdcb61c4"><span class="section-number-3">5.2.</span> 語彙分析における意味統制の水準<a id="org9b06de4"></a></h3>
+<div class="outline-text-3" id="text-5-2">
+<p>
+統計モデリングの結果 (<a href="#orgb8def23">4.1</a>) によると，統制水準が異なっても大きな変化はなかった．これは，八代集は「部立」などに規定されている共通のテーマをもとに編纂され，テーマ差による変化が本来小さく，内容の統制を行っても結果は変わりにくいためかもしれない．別資料での再検証が必要である．一方，同概念水準でのみ変化量の有効なコントラクトが多くみられた理由としては，次のように考えられる．同概念水準のサンプル語群は，部立など共通上位概念内の語形で構成される場合が多く，テーマ内で語彙選択の変化を計算する傾向がある．このようにテーマ別に絞ることで，全体では目立たない時代差が顕著になりやすい．この論理では，同義類義水準の類語選択は八代集を通じて安定的といえる．</p>
+
+<p>
+中間の同概念統制水準の結果は他の2水準とやや異なったため，語群サンプリング時の統制水準をルーズから厳格へ段階的に変えても，語彙変化が一方向に連続的に見えやすく・見えにくくなることはなかった．このように意味内容面の統制は，その影響が連続量的に振る舞わず，語彙変化の視座を離散的なものとして切り替える操作に近いといえる．</p>
+</div>
+</div>
+<div id="outline-container-orge933547" class="outline-3">
+<h3 id="orge933547"><span class="section-number-3">5.3.</span> サンプル語群のサイズと変化量の関係<a id="orgc99dc46"></a></h3>
+<div class="outline-text-3" id="text-5-3">
+<p>
+<a href="#orgb8def23">4.1</a> の統計モデリングでは，サイズが2〜5個のわずかな幅の中でもサンプル語群のサイズ拡大に伴い変化量が大きくなる正の効果が確認された（<a href="#orgc92ba7a">3</a>）．プロファイル基盤分析の変化量はサイズに敏感であることがわかった．この結果は，マクロとミクロの語彙変化量の差が必ずしも意味の統制によって生じるだけでなく，語群のサイズによっても生じる可能性を示唆する．</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb4a8af8" class="outline-2">
+<h2 id="orgb4a8af8"><span class="section-number-2">6.</span> 結論<a id="orgb26d65c"></a></h2>
+<div class="outline-text-2" id="text-6">
+<p>
+本稿は，八代集の語彙変化を分析するために，語彙的変種計量論の分析手法(<a href="#citeproc_bib_item_12">Speelman et al., 2003</a>) を基に，意味統制の水準を拡張し日本語学の語彙論の観点を切り替える手法を八代集の語彙に適用した．具体的には，無関係語群・同概念語群・類義同義語群の低・中・高の意味統制の3水準を設け，八代集の各歌集でそれらのサンプル語群を収集し，語群内の語形分布の非類似度を計算した．この変化量を用いた分析から，(1) 変化最大の隣接2歌集，(2) 時代区分，(3) 推移揺れパターンを検討した．その結果，低・高の水準は類似し，中間水準のみがやや異なった．プロファイルでの意味統制は視座の切り替えに近く，語彙変化の各の側面を強調する役割を分担していると考える．なお，文学史的事実とおおむね整合したことから，プロファイル基盤分析が文学研究の裏づけに活用できよう．</p>
+
+<div class="csl-bib-body">
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a><b>Asahara, M. et al.</b> (2022). CHJ-WLSP: Annotation of `Word List by Semantic Principles’ Labels for the Corpus of Historical Japanese. In Sprugnoli, R. and Passarotti, M. (eds), <i>Proceedings of the Second Workshop on Language Technologies for Historical and Ancient Languages</i>. Marseille, France: European Language Resources Association, pp. 31–7.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a><b>Chaudhry, S. and Heiss, A.</b> (2018).</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_3"></a><b>De Pascale, S.</b> (2019). <i>Token-Based Vector Space Models as Semantic Control in Lexical Sociolectometry</i>. Leuven: KU Leuven.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_4"></a><b>Geeraerts, D. et al.</b> (2023). Lexical Variation and the Lexeme-Lection-Lect Triangle. In Geeraerts, D. et al. (eds), <i>Lexical Variation and Change: A Distributional Semantic Approach</i>. Oxford University Press, pp. 3–31.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_5"></a><b>Geeraerts, D., Grondelaers, S. and Bakema, P.</b> (1994). <i>The Structure of Lexical Variation: Meaning, Naming, and Context</i>. Dirven, R. and Langacker, R.W. (eds). Berlin: Mouton de Gruyter.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_6"></a><b>Hodošček, B. and Yamamoto, H.</b> (2022). Development of Datasets of the Hachidaish{\=u} and Tools for the Understanding of the Characteristics and Historical Evolution of Classical Japanese Poetic Vocabulary. In <i>Digital Humanities 2022 Conference Abstracts</i>. Tokyo: The University of Tokyo, pp. 647–8.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_7"></a><b>Kruskal, J. B.</b> (1964). Multidimensional Scaling by Optimizing Goodness of Fit to a Nonmetric Hypothesis. <i>Psychometrika</i>, <b>29</b>(1), pp. 1–27. <a href="https://doi.org/10.1007/BF02289565">10.1007/BF02289565</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_8"></a><b>Labov, W.</b> (1972). <i>Sociolinguistic Patterns</i>. University of Pennsylvania Press.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_9"></a><b>Lavandera, B. R.</b> (1978). Where Does the Sociolinguistic Variable Stop? <i>Language in Society</i>, <b>7</b>(2), pp. 171–82. <a href="https://doi.org/10/d82gxm">10/d82gxm</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_10"></a><b>R Core Team.</b> (2022).</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_11"></a><b>Ruette, T. et al.</b> (2014). Semantic Weighting Mechanisms in Scalable Lexical Sociolectometry. In Szmrecsanyi, B. and Wälchli, B. (eds), <i>Aggregating Dialectology, Typology, and Register Analysis</i>. DE GRUYTER, pp. 205–30.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_12"></a><b>Speelman, D., Grondelaers, S. and Geeraerts, D.</b> (2003). Profile-Based Linguistic Uniformity as a Generic Method for Comparing Language Varieties. <i>Computers and the Humanities</i>, <b>37</b>(3), pp. 317–37.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_13"></a><b>Wolfram, W.</b> (2004). Social Varieties of American English. In Finegan, E. and Rickford, J.R. (eds), <i>Language in the USA: Themes for the Twenty-first Century</i>. Cambridge: Cambridge University Press, pp. 58–75.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_14"></a><b>上野 理.</b> (1976). <i>後拾遺集前後</i>. 東京: 笠間書院.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_15"></a><b>中村 康夫., 立川 美彦. and 杉田 まゆ子.</b> (1999). <i>国文学研究資料館データベース古典コレクション 『二十一代集』（正保版本） CD-ROM</i>. 東京: 岩波書店.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_16"></a><b>中野 洋. et al.</b> (1994). <i>分類語彙表 フロッピー版</i>. 東京: 大日本書店.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_17"></a><b>伊藤 雅光.</b> (2008). 語彙の量的構造史モデル. <i>日本語の研究</i>, <b>4</b>(1), pp. 112–29.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_18"></a><b>北崎 勇帆.</b> (2024). 平家物語の対照コーパスを通して見る中世日本語. <i>計量国語学</i>, <b>34</b>(7), pp. 483–97.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_19"></a><b>宮島 達夫.</b> (1979). 「共産党宣言」の訳語. In 言語学研究会 (ed.), <i>言語の研究</i>. 東京: むぎ書房.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_20"></a><b>山田 彬尭.</b> (2021). 江戸期から昭和期にかけての尊敬語のバリエーション : 多項混合効果ロジスティック回帰によるベイズ統計学的アプローチ. <i>言語文化共同研究プロジェクト</i>, (2020), pp. 5–25.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_21"></a><b>川村 晃生.</b> (1991). <i>摂関期和歌史の研究</i>. [博士論文 Thesis]. 東京: 慶應義塾大学.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_22"></a><b>新編国歌大観編集委員会. (ed.)</b> (1996). <i>CDROM 版新編国歌大観</i>. 東京: 角川書店.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_23"></a><b>松田 武夫. (ed.)</b> (1939). <i>詞華和歌集</i>. 東京: 岩波書店.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_24"></a><b>松田 謙次郎.</b> (2019). 岡崎敬語調査に見る「足りない」～「足らない」の変異と変化. <i>計量国語学</i>, <b>32</b>(2), pp. 66–81.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_25"></a><b>波多野 完治.</b> (1941). 和歌と俳句. In <i>文章心理學の問題</i>. 東京: 三省堂, pp. 47–62.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_26"></a><b>片桐 洋一.</b> (1983). <i>歌枕歌ことば辞典</i>. 東京: 角川書店.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_27"></a><b>田中 牧郎. and 山元 啓史.</b> (2014). 『今昔物語集』と 『宇治拾遺物語』 同文説話における語の対応 –-語の文体的価値の記述–-. <i>日本語の研究</i>, <b>10</b>(1), pp. 16–31.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_28"></a><b>田島 毓堂.</b> (2000). 語彙研究法としての「意味分野別構造分析法」のために–阪倉論文の顕彰と批判. <i>国語と国文学</i>, <b>77</b>(6), pp. 43–56.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_29"></a><b>相田 太一. et al.</b> (2023). 異なる時期での意味の違いを捉える単語分散表現の結合学習. <i>自然言語処理</i>, <b>30</b>(2), pp. 275–303.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_30"></a><b>築島 裕.</b> (1992). 訓点資料に見える『和文特有語』について. In 文化言語学編集委員会 (ed.), <i>文化言語学: その提言と建設</i>. 東京: 三省堂.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_31"></a><b>蓮見 陽子.</b> (1991). 同一情報に基づく文章表現の異同についての分析. <i>計量国語学</i>, <b>18</b>(3), pp. 136–44.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_32"></a><b>西端 幸雄.</b> (1992). 和歌と語彙 : 八代集和歌語彙の変遷. <i>樟蔭国文学</i>, <b>29</b>, pp. 83–106.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_33"></a><b>辻 勝美.</b> (1998). 歌語の研究史–-現状と展望. In 小町谷 照彦 and 三角 洋一 (eds), <i>歌ことばの歴史</i>. 東京: 笠間書院, pp. 217–38.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_34"></a><b>近藤 明日子.</b> (2018). 近代文語文の通時的変化の分析 : 語種率・品詞率に着目して. <i>言語資源活用ワークショップ発表論文集</i>, <b>1</b>, pp. 355–64.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_35"></a><b>近藤 泰弘.</b> (2011). 平安時代の漢文訓読語の分類. <i>訓点語と訓点資料</i>, <b>127</b>, pp. 120–31.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_36"></a><b>間淵 洋子.</b> (2016). 近代二字漢語における同語異表記の実態と変化 : 形態論情報付きコーパスを用いて. <i>計量国語学</i>, <b>30</b>(5), pp. 257–74.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_37"></a><b>髙橋 雄太.</b> (2019). 近代における和語の用字法の変化 -カワル・カエルとアラワレル・アラワスを中心に-. <i>明治大学人文科学研究所紀要</i>, <b>85</b>, pp. 173–208.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_38"></a><b>髙橋 雄太.</b> (2016). 近代における和語の表記の変遷 -複数表記から単一表記へ-. <i>国際日本学研究論集</i>, <b>4</b>, pp. 37–48.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_39"></a><b>髙橋 雄太., 相田 太一. and 小木曽 智信.</b> (2025). 単語分散表現による日本語和語動詞の書き分けの研究. <i>デジタル・ヒューマニティーズ</i>, <b>4</b>(1), pp. 1–11.</div>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">(<a href="#citeproc_bib_item_18">北崎, 2024</a>) は語彙に着目していない．</p></div></div>
+
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2" role="doc-backlink">2</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">語彙を用いた歌語の変化については，語彙そのものではなく，各種の品詞分布，修飾語対動詞比率など，語彙から計算された二次的なマクロ指標を用いる傾向がある(<a href="#citeproc_bib_item_25">波多野, 1941</a>; <a href="#citeproc_bib_item_32">西端, 1992</a>)．</p></div></div>
+
+<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3" role="doc-backlink">3</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">語彙でなく構文・統語変異の場合，方言研究や社会言語学変異理論を視野に入れた特定表現群の交替分析が (<a href="#citeproc_bib_item_24">松田, 2019</a>; <a href="#citeproc_bib_item_20">山田, 2021</a>) など比較的多い．</p></div></div>
+
+<div class="footdef"><sup><a id="fn.4" class="footnum" href="#fnr.4" role="doc-backlink">4</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">各種品詞の比例，語種率，タイプ/トークン率など．</p></div></div>
+
+<div class="footdef"><sup><a id="fn.5" class="footnum" href="#fnr.5" role="doc-backlink">5</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">言語変数は，同一の内容を意味する表現群を指す(<a href="#citeproc_bib_item_8">Labov, 1972</a>)．</p></div></div>
+
+<div class="footdef"><sup><a id="fn.6" class="footnum" href="#fnr.6" role="doc-backlink">6</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">踵の上までの長ズボンか，膝を覆う程度の半ズボンか明確にできない場面が現実には多く存在する．</p></div></div>
+
+<div class="footdef"><sup><a id="fn.7" class="footnum" href="#fnr.7" role="doc-backlink">7</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">意味の軸を超える他のカテゴリによる部分語彙を用いた手法(<a href="#citeproc_bib_item_17">伊藤, 2008</a>) なども参考となるが，本稿では意味の軸に関連するもののみとりあげる．</p></div></div>
+
+<div class="footdef"><sup><a id="fn.8" class="footnum" href="#fnr.8" role="doc-backlink">8</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">ただし，同語であっても，表記ごとに表意機能が異なり，使用者に別語意識をもつ場合もある．その使い分けは，研究(<a href="#citeproc_bib_item_39">髙橋 et al., 2025</a>) などでも議論されている．同一の語形の多義性は，今後の課題とする．</p></div></div>
+
+<div class="footdef"><sup><a id="fn.9" class="footnum" href="#fnr.9" role="doc-backlink">9</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">この拡張はあくまでも変種計量論の枠組みを日本語語彙研究に適用する試みであり，その枠組みの本来もつ認知社会言語学的意図とは必ずしも合致しない点に留意されたい．</p></div></div>
+
+<div class="footdef"><sup><a id="fn.10" class="footnum" href="#fnr.10" role="doc-backlink">10</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">重みづけの方法については研究 (<a href="#citeproc_bib_item_11">Ruette et al., 2014</a>) がプロファイルの重要度，内的整合性などに基づく計算方法を詳しくとりあげている．</p></div></div>
+
+<div class="footdef"><sup><a id="fn.11" class="footnum" href="#fnr.11" role="doc-backlink">11</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">分類番号づけの自動化，分類番号に依存しない水準分けは今後の課題にしたい．</p></div></div>
+
+<div class="footdef"><sup><a id="fn.12" class="footnum" href="#fnr.12" role="doc-backlink">12</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">各和歌集において異なり語数が2以上存在し，かつ語群全体で延べ語数が1以上になるように選んだ．この基準は，データセットを8つの時代のサブセットに分けて8つの時代の変化を調べる際に，時代ごとの異なり語数が1か0かになるような意味分野を避けるために考えた．</p></div></div>
+
+<div class="footdef"><sup><a id="fn.13" class="footnum" href="#fnr.13" role="doc-backlink">13</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">語群サンプルのプロファイル非類似度の分布は対数正規分布に従うと観測されているが，対数正規分布に含みえない0値データも含まれている．このような分布にはハードル対数正規分布を適用する(<a href="#citeproc_bib_item_2">Chaudhry and Heiss, 2018</a>)．統計分析にあたり，R 言語（4.2.1;(<a href="#citeproc_bib_item_10">R Core Team, 2022</a>)）， <code>brms</code> （2.20.4），stan(cmdstanr)（2.36.0）と <code>cmdstanr</code> （0.8.1）を用い，モデルについては，事前分布をデフォルトのままとし，MCMC (Hamiltonian Monte Carlo) を用いた．4本のチェーンと各チェーン4000ステップ（うち1000ステップはウォームアップ）でサンプリングを行っている．\(\hat{R}\) はすべて1.00程度で，事後分布の有効標本サイズのBulk部とTail部も十分な値を示した．</p></div></div>
+
+<div class="footdef"><sup><a id="fn.14" class="footnum" href="#fnr.14" role="doc-backlink">14</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">たとえば，「古今→後撰」「拾遺→後拾遺」「千載→新古今」など，7つの組がある．</p></div></div>
+
+<div class="footdef"><sup><a id="fn.15" class="footnum" href="#fnr.15" role="doc-backlink">15</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">モデルでは「古今→後撰」を比較の基準として効果を変換していないestimatesであることに留意されたい．</p></div></div>
+
+<div class="footdef"><sup><a id="fn.16" class="footnum" href="#fnr.16" role="doc-backlink">16</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">古歌の一部を新たな歌に取り入れる技法．</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<p class="author">Author: 陳 旭東（東京科学大学 環境・社会理工学院）, ホドシチェク ボル（大阪大学 大学院人文学研究科）, 山元 啓史（東京科学大学 環境・社会理工学院）</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

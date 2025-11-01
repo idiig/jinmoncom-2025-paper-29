@@ -4,56 +4,9 @@
 :GPTEL_SYSTEM: You are a large language model and a writing assistant. Respond concisely.\n日本語の学術論文の修正作業を以下に従って協力してください。\n\n- 句読点は「。」「、」を避け、「，」「．」を使用すること\n- 用語の置き換えは控えること\n- 文法を中心に修正を行うこと\n- Emacs Org Mode の記法を前提とすること\n- 長文を短くすること\n\n
 :GPTEL_BOUNDS: ((response (3116 3491) (3493 3527) (3530 3564) (3567 3601) (3604 3639) (3642 3682) (3684 3720) (3723 3757) (3760 3790) (4915 4972) (4986 4988) (4999 5013) (5034 5175) (5177 5642) (5644 6265) (6267 6598) (6600 6955) (6980 7074) (7076 7537) (7539 7814) (7816 8199) (8201 8492) (8494 9004) (9006 9439) (9472 9890) (9922 10209) (10211 10461) (10463 11153) (11155 11237) (11239 11425) (11428 11694) (11696 12238) (12245 12534) (12536 12739) (12743 12784) (12788 13216) (13717 13965) (13967 14241) (14727 14963) (14969 15147) (15398 15677) (15679 15976) (15982 16311) (16313 16711) (17322 18061) (18063 18382) (18384 18620) (18622 18831) (18853 18999) (19001 19225) (19227 19754) (19755 20017) (20019 20227) (22494 22720) (22722 22881) (22902 23433) (23435 23648) (23650 23841) (23843 24035) (24225 24473) (24524 24647) (24685 25067) (25069 25521) (25545 25991)))
 :END:
-#+latex_compiler: platex
-#+cite_export: bibtex ipsjsort
-#+bibliography: ./references.bib
-#+options: timestamp:nil date:nil toc:nil
-#+bind: org-latex-default-packages-alist nil
-#+bind: org-latex-packages-alist nil
-#+bind: org-latex-with-hyperref nil
-#+latex_class: ipsj
-#+latex_class_options: [submit]
-#+latex_header: \usepackage[utf8]{inputenc}
-#+latex_header: \usepackage{otf}
-#+latex_header: \DeclareUnicodeCharacter{9AD9}{\UTF{9AD9}}
-#+latex_header: \DeclareUnicodeCharacter{974F}{\UTF{974F}}
-#+latex_header: \usepackage[ipaex]{pxchfon}
-#+latex_header: \usepackage[dvipdfmx]{graphicx}
-#+latex_header: \usepackage{svg}
-#+latex_header: \usepackage{latexsym}
-#+latex_header: \usepackage{amssymb,amsthm,amsmath}
-#+latex_header: \usepackage{booktabs,siunitx}
-#+latex_header: \usepackage{tikz}
-#+latex_header: \usepackage[dvipdfmx]{geometry}
-#+latex_header: \geometry{right=20mm,left=20mm,top=30mm,bottom=30mm}
-#+latex_header: \usepackage[normalem]{ulem}
-#+latex_header: \usepackage{url}
-#+latex_header: \DeclareUrlCommand\doi{\urlstyle{tt}}
-#+latex_header: \usepackage{cleveref}
-#+latex_header: \crefname{equation}{式}{式}
-#+latex_header: \crefname{figure}{図}{図}
-#+latex_header: \crefname{table}{表}{表}
-#+latex_header: \crefname{section}{第}{第}
-#+latex_header: \creflabelformat{section}{#2#1節#3}
-#+latex_header: \crefname{subsection}{第}{第}
-#+latex_header: \creflabelformat{subsection}{#2#1小節#3}
-#+latex_header: \let\oldref\ref
-#+latex_header: \renewcommand{\ref}{\cref}
-#+latex_header: \makeatletter
-#+latex_header: \def\：{：}
-#+latex_header: \makeatother
-#+begin_src emacs-lisp :eval nil :exports none
-  (with-eval-after-load 'ox-latex
-    (add-to-list 'org-latex-classes
-                 '("ipsj"
-                   "\\documentclass{ipsj}"
-                   ("\\section{%s}" . "\\section*{%s}")
-                   ("\\subsection{%s}" . "\\subsection*{%s}")
-                   ("\\subsubsection{%s}" . "\\subsubsection*{%s}"))))
-#+end_src
-
-#+RESULTS:
-
+#+title: 語彙プロファイルに見られる八代集の語彙変化
+#+author: 陳 旭東（東京科学大学 環境・社会理工学院）, ホドシチェク ボル（大阪大学 大学院人文学研究科）, 山元 啓史（東京科学大学 環境・社会理工学院）
+#+setupfile: setup-latex.org
 #+begin_export latex
 \title{語彙プロファイルに見られる八代集の変化}
 
